@@ -16,7 +16,11 @@ from plotly.grid_objs import Column, Grid
 #################### CONFIG ######################
 
 base_directory = r"Downloads"
+<<<<<<< HEAD
 # ADD PRIVATE API KEY HERE TO CHANGE ACCOUNT
+=======
+### ADD YOUR PRIVATE API HERE ###
+>>>>>>> origin/master
 
 ################## FUNCTIONS #####################
 
