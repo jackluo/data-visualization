@@ -1,3 +1,8 @@
+##################### TIME #######################
+
+import time
+start_time = time.time()
+
 ##################### HEAD #######################
 
 import requests
@@ -45,4 +50,7 @@ for csvFile in csvs:
     file.write(response.text)
     file.close()
    
+##################### TIME #######################
 
+print "Done!"
+print "%s seconds" % (time.time() - start_time)
