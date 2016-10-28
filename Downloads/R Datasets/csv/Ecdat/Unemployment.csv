@@ -1,501 +1,453 @@
-"","Sleep","Sleep7","SmokeLife","SmokeDaily","MarijuaEver","Age"
-"1","",NA,"No","",0,16
-"2","8 hours",1,"Yes","Yes",1,16
-"3","5 hours",0,"Yes","Yes",1,17
-"4","5 hours",0,"Yes","Yes",1,18
-"5","7 hours",1,"Yes","No",1,17
-"6","4 or less hours",0,"No","No",0,15
-"7","6 hours",0,"No","No",0,17
-"8","7 hours",1,"No","No",0,17
-"9","8 hours",1,"Yes","No",0,16
-"10","8 hours",1,"No","No",0,16
-"11","4 or less hours",0,"Yes","Yes",1,18
-"12","6 hours",0,"Yes","No",1,15
-"13","7 hours",1,"No","No",0,15
-"14","8 hours",1,"No","No",0,16
-"15","5 hours",0,"Yes","Yes",1,16
-"16","7 hours",1,"No","No",0,16
-"17","7 hours",1,"No","No",0,17
-"18","8 hours",1,"Yes","No",0,16
-"19","7 hours",1,"Yes","No",1,16
-"20","8 hours",1,"Yes","No",1,16
-"21","7 hours",1,"Yes","No",1,14
-"22","8 hours",1,"No","No",1,17
-"23","7 hours",1,"No","No",0,16
-"24","6 hours",0,"No","No",0,16
-"25","6 hours",0,"No","No",0,16
-"26","10 or more hours",1,"Yes","No",1,17
-"27","8 hours",1,"No","No",1,15
-"28","7 hours",1,"Yes","No",1,17
-"29","8 hours",1,"Yes","No",1,14
-"30","7 hours",1,"No","No",0,16
-"31","8 hours",1,"No","No",0,15
-"32","",NA,"Yes","No",1,18
-"33","8 hours",1,"Yes","No",1,18
-"34","6 hours",0,"No","No",0,15
-"35","9 hours",1,"No","No",0,17
-"36","",NA,"No","No",0,17
-"37","6 hours",0,"Yes","No",1,17
-"38","7 hours",1,"No","No",0,16
-"39","5 hours",0,"No","No",0,18
-"40","7 hours",1,"Yes","No",1,15
-"41","10 or more hours",1,"No","No",0,17
-"42","7 hours",1,"Yes","Yes",1,18
-"43","6 hours",0,"No","No",0,16
-"44","6 hours",0,"Yes","No",0,16
-"45","10 or more hours",1,"Yes","No",0,17
-"46","8 hours",1,"No","No",0,16
-"47","7 hours",1,"No","No",0,14
-"48","",NA,"Yes","",0,15
-"49","6 hours",0,"No","No",0,18
-"50","8 hours",1,"No","No",0,14
-"51","7 hours",1,"Yes","No",NA,17
-"52","9 hours",1,"Yes","No",0,14
-"53","7 hours",1,"Yes","No",0,15
-"54","7 hours",1,"No","No",0,16
-"55","7 hours",1,"No","No",0,18
-"56","5 hours",0,"Yes","Yes",1,17
-"57","8 hours",1,"No","No",0,16
-"58","7 hours",1,"Yes","No",1,17
-"59","7 hours",1,"Yes","No",1,18
-"60","8 hours",1,"Yes","No",1,18
-"61","7 hours",1,"No","No",0,15
-"62","6 hours",0,"No","No",0,14
-"63","7 hours",1,"Yes","No",1,18
-"64","7 hours",1,"Yes","No",0,15
-"65","7 hours",1,"No","No",0,16
-"66","6 hours",0,"Yes","No",0,17
-"67","8 hours",1,"","",0,14
-"68","7 hours",1,"Yes","No",1,15
-"69","7 hours",1,"No","No",0,15
-"70","",NA,"No","",0,16
-"71","7 hours",1,"Yes","No",1,16
-"72","8 hours",1,"No","No",0,18
-"73","9 hours",1,"Yes","No",1,18
-"74","6 hours",0,"No","No",0,16
-"75","",NA,"Yes","No",1,17
-"76","4 or less hours",0,"Yes","No",NA,15
-"77","7 hours",1,"Yes","No",1,15
-"78","",NA,"No","",0,18
-"79","5 hours",0,"No","No",1,16
-"80","10 or more hours",1,"No","No",0,15
-"81","",NA,"No","No",1,18
-"82","8 hours",1,"Yes","No",0,15
-"83","6 hours",0,"Yes","No",1,16
-"84","7 hours",1,"Yes","No",0,16
-"85","7 hours",1,"No","No",0,18
-"86","5 hours",0,"Yes","No",1,18
-"87","5 hours",0,"Yes","No",0,14
-"88","",NA,"No","No",0,14
-"89","8 hours",1,"No","No",0,14
-"90","6 hours",0,"No","No",0,18
-"91","6 hours",0,"No","No",0,18
-"92","",NA,"No","No",1,15
-"93","7 hours",1,"Yes","No",1,18
-"94","8 hours",1,"No","No",0,18
-"95","8 hours",1,"No","No",1,15
-"96","",NA,"","",1,15
-"97","8 hours",1,"No","No",1,18
-"98","7 hours",1,"No","No",0,16
-"99","6 hours",0,"Yes","No",1,15
-"100","4 or less hours",0,"Yes","No",1,17
-"101","9 hours",1,"Yes","No",0,15
-"102","4 or less hours",0,"Yes","No",1,16
-"103","8 hours",1,"No","No",0,14
-"104","6 hours",0,"","No",1,18
-"105","8 hours",1,"Yes","No",1,17
-"106","5 hours",0,"Yes","No",1,15
-"107","7 hours",1,"No","No",0,16
-"108","",NA,"No","No",0,16
-"109","9 hours",1,"No","No",0,14
-"110","7 hours",1,"Yes","No",0,15
-"111","6 hours",0,"No","No",0,15
-"112","8 hours",1,"No","No",0,17
-"113","6 hours",0,"Yes","No",0,15
-"114","6 hours",0,"No","No",0,16
-"115","10 or more hours",1,"Yes","No",1,17
-"116","8 hours",1,"No","No",0,14
-"117","4 or less hours",0,"Yes","No",0,16
-"118","7 hours",1,"No","No",0,14
-"119","7 hours",1,"Yes","No",1,16
-"120","",NA,"Yes","",1,17
-"121","6 hours",0,"No","No",0,15
-"122","7 hours",1,"Yes","No",1,17
-"123","7 hours",1,"Yes","No",0,16
-"124","8 hours",1,"No","No",0,17
-"125","6 hours",0,"Yes","Yes",1,17
-"126","6 hours",0,"No","No",0,16
-"127","7 hours",1,"Yes","No",0,14
-"128","6 hours",0,"Yes","Yes",1,16
-"129","7 hours",1,"Yes","No",1,15
-"130","8 hours",1,"No","No",0,17
-"131","7 hours",1,"Yes","No",NA,17
-"132","7 hours",1,"Yes","No",0,17
-"133","6 hours",0,"No","No",0,17
-"134","9 hours",1,"Yes","No",1,16
-"135","7 hours",1,"No","No",0,15
-"136","8 hours",1,"Yes","Yes",1,15
-"137","4 or less hours",0,"Yes","No",0,17
-"138","9 hours",1,"Yes","No",1,15
-"139","4 or less hours",0,"Yes","No",0,15
-"140","5 hours",0,"Yes","No",1,18
-"141","5 hours",0,"No","No",0,14
-"142","8 hours",1,"No","No",0,17
-"143","8 hours",1,"No","No",1,18
-"144","7 hours",1,"Yes","No",0,15
-"145","7 hours",1,"Yes","Yes",1,15
-"146","8 hours",1,"No","No",0,16
-"147","7 hours",1,"Yes","No",1,18
-"148","9 hours",1,"Yes","",1,16
-"149","6 hours",0,"Yes","No",1,18
-"150","7 hours",1,"No","No",0,15
-"151","8 hours",1,"No","No",1,15
-"152","8 hours",1,"No","No",0,15
-"153","4 or less hours",0,"Yes","Yes",1,14
-"154","9 hours",1,"No","No",0,14
-"155","8 hours",1,"","No",NA,17
-"156","6 hours",0,"Yes","No",0,16
-"157","9 hours",1,"Yes","No",0,14
-"158","5 hours",0,"Yes","No",0,16
-"159","6 hours",0,"No","No",0,17
-"160","7 hours",1,"No","No",0,17
-"161","5 hours",0,"No","No",0,17
-"162","6 hours",0,"No","No",0,17
-"163","7 hours",1,"No","No",1,17
-"164","7 hours",1,"No","No",1,16
-"165","7 hours",1,"No","No",0,14
-"166","9 hours",1,"Yes","No",0,18
-"167","9 hours",1,"No","No",0,15
-"168","7 hours",1,"Yes","Yes",1,16
-"169","8 hours",1,"No","No",0,15
-"170","",NA,"No","",0,16
-"171","7 hours",1,"Yes","No",1,15
-"172","",NA,"No","No",0,15
-"173","9 hours",1,"No","No",0,17
-"174","6 hours",0,"Yes","Yes",1,17
-"175","8 hours",1,"Yes","No",1,18
-"176","9 hours",1,"Yes","No",0,15
-"177","",NA,"No","No",0,17
-"178","8 hours",1,"Yes","No",1,15
-"179","8 hours",1,"No","No",0,18
-"180","6 hours",0,"No","No",1,16
-"181","7 hours",1,"Yes","Yes",1,16
-"182","4 or less hours",0,"Yes","No",1,16
-"183","8 hours",1,"No","No",1,16
-"184","8 hours",1,"No","No",0,16
-"185","6 hours",0,"No","No",0,17
-"186","5 hours",0,"Yes","No",1,17
-"187","8 hours",1,"No","No",0,17
-"188","8 hours",1,"Yes","Yes",1,14
-"189","8 hours",1,"No","No",0,15
-"190","7 hours",1,"No","No",0,16
-"191","",NA,"No","No",0,16
-"192","8 hours",1,"No","No",0,14
-"193","9 hours",1,"No","No",0,15
-"194","4 or less hours",0,"Yes","No",1,14
-"195","",NA,"No","No",NA,16
-"196","8 hours",1,"No","No",0,17
-"197","7 hours",1,"No","No",0,15
-"198","5 hours",0,"Yes","No",1,18
-"199","6 hours",0,"Yes","Yes",1,15
-"200","8 hours",1,"No","No",0,17
-"201","8 hours",1,"No","No",0,15
-"202","7 hours",1,"No","No",0,16
-"203","8 hours",1,"No","No",0,15
-"204","6 hours",0,"No","No",0,16
-"205","8 hours",1,"No","No",0,18
-"206","7 hours",1,"No","No",0,16
-"207","5 hours",0,"Yes","Yes",1,16
-"208","7 hours",1,"No","No",0,17
-"209","7 hours",1,"Yes","Yes",1,17
-"210","5 hours",0,"Yes","No",0,16
-"211","5 hours",0,"Yes","No",1,17
-"212","8 hours",1,"No","No",0,16
-"213","8 hours",1,"Yes","No",0,17
-"214","7 hours",1,"Yes","No",0,15
-"215","7 hours",1,"No","No",0,15
-"216","7 hours",1,"Yes","No",1,15
-"217","",NA,"","",0,15
-"218","6 hours",0,"No","No",0,18
-"219","8 hours",1,"No","No",0,15
-"220","6 hours",0,"No","No",0,15
-"221","",NA,"Yes","No",1,17
-"222","7 hours",1,"No","No",0,18
-"223","7 hours",1,"No","No",0,16
-"224","7 hours",1,"Yes","No",0,16
-"225","4 or less hours",0,"Yes","Yes",1,15
-"226","",NA,"Yes","No",NA,15
-"227","",NA,"Yes","No",1,16
-"228","8 hours",1,"Yes","No",1,18
-"229","",NA,"","",1,17
-"230","7 hours",1,"No","No",0,17
-"231","8 hours",1,"Yes","No",1,16
-"232","9 hours",1,"No","No",0,15
-"233","4 or less hours",0,"Yes","No",1,14
-"234","6 hours",0,"No","No",0,16
-"235","8 hours",1,"","No",NA,17
-"236","6 hours",0,"No","No",0,14
-"237","6 hours",0,"Yes","No",1,16
-"238","8 hours",1,"No","No",0,15
-"239","8 hours",1,"No","No",0,15
-"240","8 hours",1,"No","No",0,15
-"241","7 hours",1,"Yes","No",1,17
-"242","6 hours",0,"No","No",0,15
-"243","6 hours",0,"No","No",0,15
-"244","",NA,"Yes","No",0,16
-"245","",NA,"No","",0,15
-"246","8 hours",1,"Yes","No",1,18
-"247","7 hours",1,"No","No",0,16
-"248","",NA,"","",0,18
-"249","5 hours",0,"No","No",0,18
-"250","8 hours",1,"No","No",0,15
-"251","5 hours",0,"Yes","No",1,17
-"252","6 hours",0,"Yes","Yes",1,17
-"253","7 hours",1,"No","No",0,15
-"254","8 hours",1,"Yes","No",1,15
-"255","7 hours",1,"No","No",0,18
-"256","5 hours",0,"Yes","No",0,17
-"257","8 hours",1,"Yes","No",0,16
-"258","9 hours",1,"No","No",0,16
-"259","7 hours",1,"No","No",0,18
-"260","5 hours",0,"No","No",0,15
-"261","5 hours",0,"No","No",0,15
-"262","4 or less hours",0,"Yes","Yes",NA,15
-"263","7 hours",1,"Yes","No",1,17
-"264","8 hours",1,"No","No",1,17
-"265","7 hours",1,"Yes","No",0,14
-"266","8 hours",1,"Yes","Yes",1,15
-"267","7 hours",1,"No","No",0,18
-"268","8 hours",1,"No","No",0,17
-"269","7 hours",1,"No","No",0,17
-"270","7 hours",1,"Yes","No",1,16
-"271","5 hours",0,"Yes","No",0,18
-"272","8 hours",1,"No","No",0,15
-"273","",NA,"Yes","",1,15
-"274","7 hours",1,"No","No",0,17
-"275","7 hours",1,"No","No",0,15
-"276","",NA,"No","",0,17
-"277","8 hours",1,"Yes","No",0,17
-"278","4 or less hours",0,"No","No",1,16
-"279","6 hours",0,"No","No",0,17
-"280","6 hours",0,"Yes","No",0,15
-"281","7 hours",1,"No","No",0,16
-"282","",NA,"No","",0,16
-"283","",NA,"","",1,17
-"284","6 hours",0,"Yes","No",0,16
-"285","8 hours",1,"No","No",0,15
-"286","6 hours",0,"Yes","No",0,15
-"287","5 hours",0,"No","No",1,16
-"288","",NA,"","",0,15
-"289","7 hours",1,"Yes","No",0,15
-"290","4 or less hours",0,"No","No",0,14
-"291","5 hours",0,"Yes","Yes",0,18
-"292","",NA,"Yes","No",0,18
-"293","8 hours",1,"No","No",0,17
-"294","10 or more hours",1,"No","No",0,17
-"295","7 hours",1,"No","No",0,14
-"296","7 hours",1,"Yes","No",1,18
-"297","6 hours",0,"No","No",0,16
-"298","7 hours",1,"Yes","No",0,15
-"299","6 hours",0,"No","No",0,17
-"300","",NA,"No","",0,15
-"301","6 hours",0,"Yes","No",1,17
-"302","7 hours",1,"","",NA,16
-"303","8 hours",1,"No","No",0,16
-"304","6 hours",0,"No","No",0,17
-"305","",NA,"","",1,16
-"306","6 hours",0,"No","No",0,16
-"307","4 or less hours",0,"No","No",0,18
-"308","5 hours",0,"Yes","No",1,17
-"309","8 hours",1,"No","No",0,17
-"310","7 hours",1,"Yes","No",0,16
-"311","8 hours",1,"No","No",0,18
-"312","",NA,"","",0,18
-"313","8 hours",1,"No","No",0,17
-"314","7 hours",1,"Yes","No",1,14
-"315","7 hours",1,"Yes","No",1,15
-"316","7 hours",1,"Yes","No",1,16
-"317","6 hours",0,"Yes","No",1,15
-"318","8 hours",1,"No","No",1,15
-"319","7 hours",1,"","No",0,16
-"320","6 hours",0,"No","No",0,18
-"321","8 hours",1,"No","No",0,15
-"322","",NA,"No","No",0,16
-"323","7 hours",1,"Yes","No",1,16
-"324","8 hours",1,"Yes","No",0,16
-"325","",NA,"No","No",0,18
-"326","7 hours",1,"Yes","No",1,18
-"327","6 hours",0,"No","No",0,17
-"328","6 hours",0,"No","No",0,15
-"329","10 or more hours",1,"Yes","No",1,15
-"330","5 hours",0,"Yes","No",1,15
-"331","9 hours",1,"No","No",0,15
-"332","7 hours",1,"No","No",0,15
-"333","7 hours",1,"No","No",0,16
-"334","7 hours",1,"No","No",0,17
-"335","6 hours",0,"Yes","No",1,18
-"336","",NA,"No","No",0,15
-"337","",NA,"No","No",1,16
-"338","7 hours",1,"No","No",0,15
-"339","",NA,"","",0,14
-"340","7 hours",1,"No","No",0,16
-"341","",NA,"No","No",0,15
-"342","5 hours",0,"Yes","No",1,16
-"343","7 hours",1,"No","No",0,15
-"344","6 hours",0,"Yes","No",1,15
-"345","9 hours",1,"No","No",0,14
-"346","4 or less hours",0,"Yes","Yes",1,17
-"347","",NA,"No","",0,15
-"348","10 or more hours",1,"No","No",0,15
-"349","7 hours",1,"No","No",0,18
-"350","",NA,"No","",0,15
-"351","6 hours",0,"Yes","No",1,17
-"352","8 hours",1,"No","No",0,14
-"353","",NA,"No","",0,17
-"354","",NA,"Yes","No",0,15
-"355","7 hours",1,"No","No",0,14
-"356","6 hours",0,"No","No",0,17
-"357","9 hours",1,"No","No",1,17
-"358","5 hours",0,"No","No",0,16
-"359","7 hours",1,"Yes","Yes",1,16
-"360","8 hours",1,"Yes","No",0,14
-"361","8 hours",1,"No","No",0,16
-"362","8 hours",1,"Yes","No",1,16
-"363","9 hours",1,"Yes","No",1,16
-"364","8 hours",1,"No","No",1,17
-"365","7 hours",1,"No","No",NA,18
-"366","7 hours",1,"No","No",0,16
-"367","6 hours",0,"No","No",0,16
-"368","6 hours",0,"No","No",0,17
-"369","",NA,"No","No",NA,17
-"370","6 hours",0,"No","No",0,18
-"371","7 hours",1,"Yes","Yes",1,16
-"372","8 hours",1,"No","No",0,15
-"373","9 hours",1,"No","No",0,17
-"374","8 hours",1,"","",1,17
-"375","6 hours",0,"No","No",1,14
-"376","7 hours",1,"No","No",0,18
-"377","7 hours",1,"Yes","No",1,17
-"378","9 hours",1,"No","No",0,15
-"379","8 hours",1,"No","No",0,14
-"380","6 hours",0,"No","No",0,15
-"381","4 or less hours",0,"No","No",0,17
-"382","9 hours",1,"No","No",0,15
-"383","6 hours",0,"Yes","Yes",1,16
-"384","8 hours",1,"Yes","No",1,18
-"385","8 hours",1,"No","No",0,16
-"386","",NA,"","No",0,16
-"387","8 hours",1,"No","No",0,14
-"388","",NA,"Yes","No",1,17
-"389","6 hours",0,"No","No",NA,18
-"390","",NA,"No","No",0,14
-"391","8 hours",1,"No","No",0,17
-"392","7 hours",1,"No","No",NA,17
-"393","4 or less hours",0,"No","No",NA,16
-"394","8 hours",1,"No","No",0,18
-"395","7 hours",1,"No","No",0,17
-"396","9 hours",1,"No","No",0,14
-"397","8 hours",1,"Yes","No",1,16
-"398","9 hours",1,"No","No",0,17
-"399","7 hours",1,"Yes","No",1,16
-"400","8 hours",1,"No","No",0,15
-"401","5 hours",0,"Yes","Yes",1,17
-"402","6 hours",0,"Yes","No",1,16
-"403","8 hours",1,"Yes","No",0,16
-"404","7 hours",1,"No","No",0,15
-"405","6 hours",0,"No","No",0,17
-"406","",NA,"No","",0,18
-"407","6 hours",0,"No","No",0,15
-"408","7 hours",1,"Yes","No",0,16
-"409","8 hours",1,"No","No",0,14
-"410","7 hours",1,"No","No",0,16
-"411","8 hours",1,"No","No",0,15
-"412","7 hours",1,"No","No",1,15
-"413","8 hours",1,"No","No",0,16
-"414","8 hours",1,"No","No",0,17
-"415","8 hours",1,"Yes","Yes",1,18
-"416","",NA,"","",1,16
-"417","5 hours",0,"Yes","Yes",1,18
-"418","6 hours",0,"Yes","No",1,18
-"419","",NA,"No","",0,16
-"420","5 hours",0,"No","No",0,18
-"421","7 hours",1,"No","No",0,17
-"422","5 hours",0,"No","No",0,14
-"423","6 hours",0,"Yes","Yes",0,17
-"424","7 hours",1,"Yes","No",0,15
-"425","7 hours",1,"Yes","",1,18
-"426","7 hours",1,"No","No",1,17
-"427","5 hours",0,"Yes","No",1,16
-"428","7 hours",1,"No","No",0,17
-"429","6 hours",0,"No","No",0,18
-"430","5 hours",0,"Yes","Yes",1,17
-"431","6 hours",0,"No","No",0,15
-"432","7 hours",1,"No","No",0,14
-"433","9 hours",1,"Yes","No",0,14
-"434","6 hours",0,"No","No",0,18
-"435","6 hours",0,"Yes","No",0,14
-"436","4 or less hours",0,"Yes","No",0,17
-"437","4 or less hours",0,"Yes","Yes",0,17
-"438","4 or less hours",0,"Yes","Yes",1,15
-"439","7 hours",1,"No","No",0,16
-"440","8 hours",1,"No","No",0,15
-"441","8 hours",1,"No","No",0,16
-"442","7 hours",1,"Yes","Yes",1,18
-"443","9 hours",1,"No","No",1,14
-"444","4 or less hours",0,"Yes","Yes",1,16
-"445","7 hours",1,"No","No",1,16
-"446","6 hours",0,"Yes","No",1,17
-"447","7 hours",1,"Yes","No",0,17
-"448","8 hours",1,"No","No",0,16
-"449","7 hours",1,"","No",NA,14
-"450","7 hours",1,"No","No",0,17
-"451","6 hours",0,"No","No",0,15
-"452","7 hours",1,"No","No",0,16
-"453","8 hours",1,"Yes","No",1,16
-"454","6 hours",0,"No","No",0,15
-"455","8 hours",1,"No","No",1,16
-"456","9 hours",1,"No","No",0,17
-"457","8 hours",1,"Yes","No",1,17
-"458","7 hours",1,"Yes","No",1,18
-"459","6 hours",0,"No","No",0,15
-"460","6 hours",0,"Yes","No",1,17
-"461","6 hours",0,"No","No",0,18
-"462","",NA,"","",1,17
-"463","7 hours",1,"Yes","No",0,17
-"464","9 hours",1,"No","No",0,16
-"465","8 hours",1,"No","No",0,15
-"466","6 hours",0,"Yes","No",1,16
-"467","7 hours",1,"Yes","No",1,18
-"468","9 hours",1,"No","No",0,15
-"469","8 hours",1,"Yes","No",1,14
-"470","7 hours",1,"No","No",0,15
-"471","7 hours",1,"Yes","No",0,16
-"472","6 hours",0,"No","No",0,15
-"473","",NA,"","",0,15
-"474","8 hours",1,"No","No",0,15
-"475","9 hours",1,"No","No",1,14
-"476","6 hours",0,"Yes","Yes",1,14
-"477","8 hours",1,"Yes","No",1,17
-"478","8 hours",1,"No","No",0,16
-"479","8 hours",1,"Yes","No",0,15
-"480","8 hours",1,"No","No",0,15
-"481","8 hours",1,"Yes","No",0,16
-"482","7 hours",1,"No","No",0,16
-"483","7 hours",1,"No","No",0,15
-"484","6 hours",0,"Yes","No",1,16
-"485","7 hours",1,"No","No",0,15
-"486","6 hours",0,"No","No",0,17
-"487","8 hours",1,"No","No",1,18
-"488","7 hours",1,"Yes","No",1,18
-"489","6 hours",0,"Yes","Yes",1,15
-"490","6 hours",0,"Yes","No",0,18
-"491","6 hours",0,"Yes","No",0,15
-"492","8 hours",1,"Yes","No",1,17
-"493","8 hours",1,"Yes","No",0,15
-"494","7 hours",1,"Yes","No",1,18
-"495","7 hours",1,"No","No",0,16
-"496","7 hours",1,"Yes","Yes",1,18
-"497","6 hours",0,"Yes","No",0,15
-"498","8 hours",1,"No","No",1,17
-"499","7 hours",1,"No","No",0,15
-"500","7 hours",1,"Yes","No",1,16
+"","duration","spell","race","sex","reason","search","pubemp","ftp1","ftp2","ftp3","ftp4","nobs"
+"1",4,1,"white","male","reentr","yes","yes",1,0,0,0,1
+"2",7,0,"white","male","lose","no","no",1,1,1,1,2
+"3",1,0,"nonwhite","male","lose","no","no",0,0,0,0,1
+"4",1,1,"nonwhite","male","reentr","no","no",0,1,0,0,1
+"5",3,1,"nonwhite","female","reentr","no","no",0,0,0,0,1
+"6",1,1,"white","female","reentr","no","no",0,0,0,0,1
+"7",65,0,"white","male","lose","yes","yes",1,1,1,1,4
+"8",4,0,"white","female","reentr","no","no",0,0,0,0,1
+"9",113,0,"white","female","reentr","no","no",0,0,0,0,3
+"10",9,1,"white","male","leave","yes","no",1,0,0,1,1
+"11",9,1,"white","male","leave","yes","no",1,1,0,0,2
+"12",104,0,"white","male","leave","yes","no",1,0,0,1,1
+"13",21,0,"white","female","reentr","no","yes",1,1,1,1,4
+"14",20,0,"white","female","lose","no","no",1,1,1,1,4
+"15",8,1,"white","male","reentr","no","no",1,0,0,0,1
+"16",104,1,"white","female","lose","yes","no",1,0,1,0,1
+"17",20,1,"white","male","lose","no","no",1,1,0,0,2
+"18",56,1,"nonwhite","female","reentr","no","no",0,0,0,0,2
+"19",61,0,"white","female","lose","no","yes",1,1,1,1,4
+"20",3,0,"white","female","leave","no","no",1,0,0,1,1
+"21",2,0,"white","female","reentr","yes","no",1,0,0,1,1
+"22",1,1,"white","female","lose","no","no",0,0,0,0,1
+"23",22,1,"white","female","leave","no","yes",1,1,1,0,3
+"24",12,1,"nonwhite","male","reentr","no","no",0,1,0,0,1
+"25",7,1,"nonwhite","female","reentr","no","no",0,0,0,0,1
+"26",104,1,"nonwhite","male","reentr","yes","yes",0,1,0,0,1
+"27",12,0,"white","female","new","no","no",0,0,0,0,1
+"28",17,0,"white","female","lose","yes","no",1,1,1,1,3
+"29",17,0,"white","male","reentr","no","no",1,0,0,0,1
+"30",1,1,"white","male","reentr","no","no",0,0,0,0,1
+"31",12,1,"white","male","lose","no","no",1,1,1,0,3
+"32",10,0,"white","male","lose","no","no",1,1,1,1,3
+"33",1,0,"white","male","leave","no","no",1,0,0,1,1
+"34",10,1,"nonwhite","female","lose","no","yes",1,1,1,0,3
+"35",108,1,"white","male","lose","no","no",1,1,0,1,2
+"36",104,1,"white","female","lose","yes","no",0,1,0,0,1
+"37",11,0,"nonwhite","female","new","no","no",0,0,0,0,3
+"38",56,1,"white","female","leave","yes","no",1,1,0,0,2
+"39",65,0,"white","male","reentr","no","no",1,1,1,1,4
+"40",7,1,"white","male","reentr","no","yes",1,0,1,0,1
+"41",35,1,"nonwhite","female","lose","no","no",0,0,0,0,1
+"42",61,0,"white","female","lose","no","no",1,1,1,1,4
+"43",56,1,"nonwhite","female","leave","no","no",1,1,0,0,2
+"44",3,1,"nonwhite","male","reentr","yes","no",0,0,0,0,1
+"45",35,0,"nonwhite","male","leave","no","no",1,1,1,1,4
+"46",13,1,"white","female","leave","yes","no",1,0,0,0,1
+"47",2,1,"nonwhite","female","lose","yes","no",0,1,0,0,1
+"48",9,0,"white","female","lose","no","no",1,1,1,1,2
+"49",6,0,"white","male","new","no","no",0,0,0,0,2
+"50",3,0,"white","female","lose","no","no",1,0,0,1,1
+"51",104,1,"white","male","reentr","yes","yes",1,0,0,0,1
+"52",16,0,"nonwhite","female","lose","yes","no",1,0,0,0,4
+"53",1,1,"white","female","new","no","no",0,0,0,0,1
+"54",7,0,"white","female","new","yes","yes",1,0,1,0,1
+"55",65,0,"white","male","reentr","no","yes",1,1,1,1,4
+"56",9,1,"white","female","reentr","no","no",0,0,0,0,2
+"57",2,1,"white","female","leave","yes","no",1,0,0,0,1
+"58",5,0,"white","male","lose","no","no",1,0,0,1,1
+"59",2,1,"white","female","leave","yes","yes",0,0,0,0,1
+"60",2,1,"white","female","lose","no","no",0,1,0,0,1
+"61",8,1,"white","female","lose","no","yes",1,1,0,0,2
+"62",7,1,"white","male","reentr","no","no",0,0,0,0,2
+"63",1,1,"white","male","reentr","no","no",1,0,0,0,1
+"64",13,0,"white","female","lose","no","no",1,1,1,1,2
+"65",12,0,"white","female","lose","yes","no",1,1,1,1,3
+"66",8,0,"white","male","lose","yes","no",1,1,1,1,2
+"67",61,0,"white","female","reentr","yes","no",0,0,0,0,3
+"68",17,0,"white","female","reentr","no","no",0,0,0,0,2
+"69",26,0,"nonwhite","female","new","no","no",1,1,1,1,4
+"70",16,1,"nonwhite","female","reentr","no","no",1,0,0,0,1
+"71",2,1,"nonwhite","female","reentr","no","no",1,0,0,0,1
+"72",5,0,"nonwhite","female","reentr","no","no",1,0,0,1,1
+"73",3,0,"nonwhite","female","reentr","no","no",0,0,0,0,1
+"74",16,1,"white","female","reentr","no","no",1,0,0,0,1
+"75",26,0,"white","female","reentr","yes","no",1,0,1,0,1
+"76",4,0,"white","male","lose","yes","no",1,0,0,1,1
+"77",13,1,"white","female","new","no","no",1,0,0,0,1
+"78",58,0,"white","male","lose","no","no",1,1,1,0,3
+"79",14,1,"white","male","lose","yes","no",1,0,0,0,1
+"80",1,0,"white","female","lose","no","no",1,0,0,1,1
+"81",15,0,"white","male","lose","no","no",1,1,1,1,3
+"82",1,0,"white","female","reentr","no","no",1,0,0,1,1
+"83",7,0,"white","male","leave","no","no",1,1,1,1,2
+"84",10,1,"white","male","lose","yes","yes",0,1,1,0,3
+"85",18,1,"white","female","reentr","no","no",1,1,0,0,2
+"86",48,0,"white","male","lose","no","yes",1,1,1,1,4
+"87",21,1,"white","male","lose","no","no",0,1,0,0,1
+"88",12,0,"white","male","reentr","no","no",1,1,1,1,3
+"89",3,1,"white","female","lose","no","no",0,0,0,0,1
+"90",56,0,"white","male","leave","no","no",1,1,1,1,4
+"91",15,0,"white","female","reentr","no","yes",1,1,1,1,4
+"92",3,0,"white","male","lose","no","no",1,0,0,1,1
+"93",2,1,"white","female","reentr","no","no",0,1,0,0,1
+"94",3,1,"white","male","lose","no","no",1,0,0,0,1
+"95",12,0,"white","female","new","no","no",0,0,0,0,3
+"96",1,1,"white","male","lose","no","no",0,0,0,0,1
+"97",3,1,"white","male","lose","yes","no",1,0,0,0,1
+"98",5,1,"white","male","lose","no","yes",1,1,1,0,2
+"99",2,1,"white","female","lose","yes","yes",1,0,1,0,1
+"100",8,0,"white","male","leave","no","no",0,0,0,0,2
+"101",9,0,"white","male","reentr","no","no",1,1,1,1,2
+"102",26,1,"white","female","reentr","yes","no",0,0,0,0,1
+"103",1,0,"white","male","lose","no","no",1,0,0,0,1
+"104",7,1,"white","female","reentr","no","no",1,1,1,0,2
+"105",6,1,"white","female","new","no","no",0,0,0,0,1
+"106",5,1,"white","male","reentr","no","no",1,0,1,0,1
+"107",4,1,"nonwhite","female","lose","yes","no",1,0,0,0,1
+"108",9,0,"nonwhite","male","reentr","no","yes",0,0,0,0,1
+"109",5,1,"nonwhite","male","new","no","no",0,0,0,0,1
+"110",12,1,"white","female","reentr","no","no",1,1,1,0,3
+"111",4,0,"white","female","reentr","yes","no",1,0,0,0,1
+"112",65,0,"nonwhite","female","leave","no","no",1,1,1,1,4
+"113",8,1,"nonwhite","female","reentr","no","yes",1,1,0,0,2
+"114",8,1,"nonwhite","female","new","no","no",1,1,0,0,2
+"115",22,1,"nonwhite","female","reentr","no","no",0,0,0,0,1
+"116",19,0,"nonwhite","female","new","no","no",1,1,1,1,3
+"117",38,1,"nonwhite","male","leave","no","no",1,1,1,0,3
+"118",25,0,"nonwhite","male","lose","no","yes",1,1,1,1,4
+"119",12,0,"nonwhite","female","reentr","yes","no",1,0,1,1,1
+"120",26,1,"nonwhite","male","lose","yes","no",1,0,0,0,1
+"121",2,1,"white","male","reentr","yes","no",0,0,0,0,1
+"122",8,1,"nonwhite","female","lose","no","no",0,0,0,0,1
+"123",6,1,"nonwhite","female","new","no","no",0,0,0,1,1
+"124",2,0,"white","male","reentr","no","no",0,0,0,0,1
+"125",1,1,"white","male","reentr","no","no",0,1,0,0,1
+"126",1,0,"white","male","leave","no","no",1,0,0,1,1
+"127",3,1,"white","male","reentr","no","no",0,0,0,0,1
+"128",52,1,"white","male","leave","yes","no",1,0,0,0,1
+"129",1,1,"white","male","lose","no","no",0,0,0,0,1
+"130",1,0,"white","male","lose","no","no",1,0,0,1,1
+"131",2,0,"white","male","reentr","yes","no",0,1,0,0,1
+"132",1,1,"white","female","lose","no","no",0,0,0,0,1
+"133",2,1,"white","female","lose","no","no",0,0,0,0,1
+"134",20,1,"white","female","reentr","no","yes",1,1,1,0,3
+"135",35,1,"white","male","reentr","no","no",0,0,0,0,1
+"136",16,1,"white","female","reentr","yes","yes",1,0,1,1,1
+"137",22,0,"white","male","leave","yes","yes",1,0,0,0,1
+"138",1,0,"white","female","reentr","yes","no",1,0,1,0,1
+"139",12,0,"nonwhite","female","reentr","no","yes",1,1,0,0,2
+"140",11,0,"nonwhite","male","leave","no","yes",1,1,1,1,3
+"141",12,0,"nonwhite","male","leave","no","yes",1,1,1,1,3
+"142",7,1,"nonwhite","male","leave","yes","yes",1,0,1,0,1
+"143",21,1,"white","male","lose","no","no",0,1,0,0,1
+"144",27,0,"white","male","leave","yes","no",1,1,1,1,2
+"145",23,0,"white","male","reentr","yes","no",1,1,1,1,3
+"146",3,1,"white","female","lose","no","no",0,0,0,0,1
+"147",22,1,"nonwhite","male","new","yes","no",0,1,0,0,1
+"148",4,1,"white","female","leave","no","no",1,0,1,0,1
+"149",39,1,"white","male","lose","yes","no",1,0,0,0,1
+"150",26,0,"white","female","lose","no","no",0,0,0,0,1
+"151",19,0,"white","female","new","no","no",0,0,0,0,4
+"152",16,1,"nonwhite","male","new","no","no",0,0,0,0,2
+"153",11,0,"white","female","reentr","yes","no",1,1,1,1,3
+"154",17,0,"white","male","leave","no","yes",1,1,1,1,4
+"155",10,0,"white","female","lose","no","no",0,0,0,0,3
+"156",8,0,"white","female","new","no","no",0,0,0,0,1
+"157",25,0,"nonwhite","female","lose","yes","yes",1,1,1,1,4
+"158",48,0,"white","male","leave","no","no",1,1,1,1,4
+"159",2,1,"white","male","leave","yes","no",0,1,0,0,1
+"160",21,0,"white","male","lose","yes","yes",1,1,1,1,4
+"161",7,1,"nonwhite","male","new","no","no",0,0,0,1,2
+"162",23,0,"white","male","lose","no","yes",1,1,1,1,4
+"163",6,1,"white","male","lose","no","no",1,0,0,0,1
+"164",1,1,"nonwhite","female","reentr","yes","yes",0,0,0,0,1
+"165",43,1,"nonwhite","male","lose","yes","no",1,1,0,0,2
+"166",3,1,"white","female","reentr","yes","no",1,0,1,0,1
+"167",26,1,"white","female","leave","no","yes",1,1,1,0,3
+"168",0,1,"white","female","new","no","no",0,0,0,0,1
+"169",3,0,"white","female","leave","yes","no",1,0,0,1,1
+"170",78,1,"white","male","lose","no","no",1,0,0,0,1
+"171",13,1,"white","male","reentr","no","no",0,0,0,0,2
+"172",13,1,"white","female","lose","no","no",1,0,0,0,1
+"173",52,1,"white","female","new","no","no",0,0,0,0,1
+"174",52,0,"white","male","lose","no","no",1,1,0,0,2
+"175",2,0,"white","female","reentr","yes","no",0,0,0,0,1
+"176",104,1,"white","female","leave","no","no",0,0,0,0,1
+"177",7,1,"white","female","leave","no","yes",1,1,0,0,2
+"178",4,1,"white","male","reentr","yes","no",0,0,0,0,1
+"179",16,1,"white","female","reentr","yes","no",0,1,0,0,1
+"180",35,1,"nonwhite","female","reentr","no","no",1,0,1,1,1
+"181",6,1,"white","male","leave","no","no",0,0,0,0,2
+"182",17,0,"white","male","leave","no","no",0,0,0,0,4
+"183",4,0,"nonwhite","female","lose","no","no",1,0,0,1,1
+"184",5,1,"white","male","lose","no","no",1,1,1,0,2
+"185",38,1,"white","male","lose","yes","no",1,1,1,0,3
+"186",4,0,"white","female","reentr","yes","no",1,0,0,1,1
+"187",12,1,"white","female","leave","yes","yes",1,1,1,0,3
+"188",30,1,"white","male","reentr","no","no",1,0,0,0,1
+"189",4,0,"white","female","reentr","no","no",0,0,0,0,1
+"190",1,0,"nonwhite","female","reentr","no","no",1,0,1,0,1
+"191",6,1,"white","male","new","no","no",0,0,0,0,1
+"192",2,1,"white","male","leave","yes","no",1,0,0,0,1
+"193",25,0,"white","male","reentr","no","no",1,1,1,1,4
+"194",9,0,"white","male","lose","no","no",1,1,1,1,2
+"195",4,1,"white","female","reentr","no","no",0,0,0,0,1
+"196",61,0,"white","male","reentr","no","yes",1,1,1,1,3
+"197",3,1,"white","female","new","yes","no",0,0,0,0,1
+"198",22,1,"white","male","reentr","no","no",0,1,0,0,1
+"199",11,1,"white","male","lose","no","no",1,0,0,0,1
+"200",2,1,"white","male","lose","no","no",0,1,0,0,1
+"201",48,0,"white","male","lose","no","yes",1,1,1,1,4
+"202",1,1,"white","male","lose","no","no",1,0,0,0,1
+"203",16,1,"white","female","reentr","no","yes",1,1,0,1,2
+"204",15,0,"white","male","lose","yes","yes",1,1,1,1,4
+"205",26,0,"white","male","lose","no","yes",1,1,1,1,4
+"206",16,0,"white","male","lose","no","yes",1,1,1,1,4
+"207",8,1,"white","female","reentr","no","no",1,1,1,0,2
+"208",8,0,"white","male","leave","yes","yes",1,1,1,1,2
+"209",1,1,"white","female","reentr","no","yes",0,0,0,0,1
+"210",7,0,"white","male","leave","no","yes",1,1,1,1,2
+"211",7,0,"white","female","lose","no","yes",1,1,1,1,2
+"212",43,0,"white","female","lose","no","yes",1,1,1,1,4
+"213",4,1,"white","female","leave","yes","no",1,0,0,0,1
+"214",61,0,"white","male","lose","no","no",1,1,1,1,3
+"215",39,0,"white","male","leave","no","yes",1,1,0,0,2
+"216",4,1,"nonwhite","female","reentr","no","no",0,1,0,0,1
+"217",1,1,"nonwhite","female","leave","no","no",0,0,0,0,1
+"218",2,0,"white","male","lose","no","no",1,0,0,1,1
+"219",39,1,"white","male","leave","yes","yes",1,0,0,0,1
+"220",12,1,"white","male","lose","yes","yes",1,0,0,0,1
+"221",4,0,"white","male","leave","yes","no",1,0,1,0,1
+"222",8,1,"white","female","reentr","no","no",0,1,0,0,1
+"223",10,0,"white","male","lose","no","no",0,0,0,0,3
+"224",7,1,"nonwhite","male","leave","no","no",1,0,0,0,1
+"225",4,0,"white","female","lose","no","no",0,0,0,0,1
+"226",1,1,"white","male","lose","no","no",0,0,1,1,1
+"227",7,1,"nonwhite","female","reentr","yes","no",1,0,0,0,1
+"228",3,1,"nonwhite","male","reentr","no","no",1,0,0,0,1
+"229",12,0,"white","female","leave","no","yes",1,1,1,0,3
+"230",3,1,"white","female","leave","yes","no",1,0,1,0,1
+"231",4,0,"white","male","leave","yes","yes",1,0,0,1,1
+"232",117,0,"white","male","lose","no","yes",1,1,1,1,4
+"233",35,0,"nonwhite","female","reentr","no","no",1,1,1,1,4
+"234",6,0,"white","male","leave","yes","no",1,0,0,0,1
+"235",9,0,"nonwhite","female","new","no","no",0,0,0,0,2
+"236",100,0,"white","male","lose","no","yes",1,1,1,1,4
+"237",26,1,"white","female","new","yes","no",0,0,0,0,1
+"238",8,1,"white","male","reentr","no","no",0,1,0,0,1
+"239",9,0,"white","male","lose","no","no",1,1,1,1,2
+"240",2,1,"white","male","leave","yes","no",0,1,0,0,1
+"241",16,1,"white","female","new","no","no",0,0,0,0,1
+"242",8,1,"nonwhite","male","lose","no","no",1,1,0,0,2
+"243",4,1,"white","male","lose","yes","no",0,1,0,0,1
+"244",109,0,"nonwhite","female","lose","no","yes",1,1,1,1,2
+"245",49,0,"nonwhite","male","reentr","no","yes",1,1,1,1,3
+"246",1,0,"nonwhite","male","reentr","yes","no",0,0,0,0,1
+"247",12,1,"nonwhite","female","reentr","yes","no",1,0,0,0,1
+"248",61,0,"nonwhite","male","lose","no","yes",1,1,1,1,3
+"249",2,1,"nonwhite","male","lose","no","no",1,0,1,1,1
+"250",17,0,"nonwhite","female","lose","no","no",1,1,1,1,4
+"251",60,1,"white","female","lose","no","no",1,1,1,0,3
+"252",112,1,"white","female","reentr","no","no",1,1,1,0,3
+"253",52,1,"white","female","lose","no","no",1,0,1,0,1
+"254",17,0,"white","male","lose","yes","no",1,1,1,1,4
+"255",8,0,"nonwhite","male","new","no","no",1,1,0,0,2
+"256",104,1,"nonwhite","female","new","yes","yes",1,0,0,0,1
+"257",65,0,"nonwhite","male","lose","no","no",1,1,1,1,4
+"258",6,1,"white","female","lose","no","yes",1,1,0,0,2
+"259",29,0,"white","male","lose","no","yes",1,1,1,1,4
+"260",8,1,"nonwhite","male","lose","yes","no",0,1,0,0,1
+"261",26,1,"white","male","leave","yes","no",1,1,0,0,2
+"262",1,1,"white","male","leave","yes","no",0,0,0,0,1
+"263",16,1,"white","male","reentr","no","yes",1,1,0,0,2
+"264",6,1,"white","male","lose","yes","yes",0,1,0,0,1
+"265",30,0,"white","male","lose","no","no",1,1,1,0,3
+"266",3,1,"white","female","leave","no","no",0,0,0,0,1
+"267",12,1,"white","female","lose","no","no",0,0,0,0,3
+"268",12,1,"white","male","leave","no","no",1,0,1,0,1
+"269",8,1,"white","male","leave","no","no",1,0,1,0,1
+"270",13,1,"white","female","new","yes","no",1,0,1,0,1
+"271",16,1,"white","male","lose","yes","no",1,1,0,0,2
+"272",6,1,"white","male","lose","yes","no",1,1,0,1,1
+"273",43,0,"white","male","leave","no","no",1,1,1,1,4
+"274",52,0,"white","female","reentr","yes","no",0,0,0,0,1
+"275",12,0,"white","female","new","no","no",0,0,0,0,1
+"276",6,0,"white","female","reentr","no","no",0,0,0,0,2
+"277",1,0,"white","male","reentr","yes","no",0,0,0,0,1
+"278",13,0,"white","female","lose","no","no",1,1,1,1,3
+"279",47,0,"nonwhite","male","lose","no","no",1,1,1,0,2
+"280",4,1,"white","male","reentr","yes","no",0,0,0,0,1
+"281",4,0,"white","male","leave","no","no",1,0,0,1,1
+"282",3,1,"white","male","lose","no","no",1,0,0,0,1
+"283",12,1,"white","male","reentr","no","yes",0,1,0,0,1
+"284",12,1,"white","female","leave","yes","no",1,0,0,0,1
+"285",3,1,"white","male","leave","no","no",0,1,0,0,1
+"286",23,0,"white","female","reentr","no","no",0,0,0,0,4
+"287",2,0,"nonwhite","female","leave","yes","no",1,0,0,1,1
+"288",39,0,"white","male","lose","no","no",1,1,1,1,4
+"289",39,0,"white","male","lose","no","no",1,1,1,1,4
+"290",2,1,"white","male","new","no","no",0,0,0,0,1
+"291",24,0,"white","female","reentr","no","yes",1,1,1,1,4
+"292",43,1,"white","male","lose","yes","no",1,0,0,0,1
+"293",6,0,"nonwhite","female","reentr","yes","no",1,1,0,0,2
+"294",7,1,"nonwhite","female","reentr","yes","no",0,0,0,0,2
+"295",4,1,"nonwhite","male","reentr","yes","no",1,0,0,0,1
+"296",2,1,"white","female","leave","no","no",0,0,0,0,1
+"297",1,1,"white","female","reentr","no","no",0,0,0,0,1
+"298",1,1,"nonwhite","female","lose","no","no",0,0,0,0,1
+"299",17,0,"nonwhite","female","reentr","no","no",0,0,0,0,2
+"300",104,0,"nonwhite","female","reentr","no","no",1,0,0,1,1
+"301",1,1,"white","female","lose","no","no",0,0,0,0,1
+"302",4,1,"white","male","new","no","no",0,1,0,0,1
+"303",8,1,"white","female","reentr","yes","no",0,1,0,0,1
+"304",35,0,"white","male","lose","yes","no",1,1,1,1,4
+"305",1,1,"white","female","reentr","no","no",1,0,0,0,1
+"306",16,1,"nonwhite","female","leave","yes","yes",1,0,1,1,1
+"307",15,0,"white","female","lose","no","no",1,1,1,1,2
+"308",15,0,"white","female","reentr","no","no",1,1,1,1,4
+"309",11,0,"white","female","reentr","no","no",1,1,1,1,3
+"310",1,1,"white","female","reentr","no","no",0,0,0,0,1
+"311",2,0,"white","female","new","no","no",0,0,0,0,1
+"312",61,0,"white","male","leave","yes","no",1,1,1,1,3
+"313",39,1,"nonwhite","male","lose","no","no",1,0,0,0,1
+"314",11,0,"nonwhite","male","lose","no","no",1,1,1,0,3
+"315",4,0,"white","male","leave","yes","yes",1,0,1,0,1
+"316",13,0,"white","female","reentr","yes","no",1,1,1,1,2
+"317",20,1,"white","male","leave","no","no",1,1,1,0,3
+"318",15,0,"nonwhite","male","leave","no","yes",1,1,1,1,4
+"319",69,1,"white","male","lose","yes","yes",1,1,0,0,2
+"320",20,1,"white","female","reentr","no","no",0,0,0,0,2
+"321",4,0,"white","male","lose","yes","no",1,0,0,1,1
+"322",43,1,"white","male","lose","no","no",1,0,1,0,1
+"323",20,1,"white","female","reentr","no","no",0,0,0,0,3
+"324",11,1,"white","male","lose","yes","yes",1,0,1,0,1
+"325",3,1,"white","female","new","yes","no",0,0,0,0,1
+"326",4,1,"white","male","reentr","no","no",0,0,0,0,1
+"327",10,1,"white","male","lose","yes","yes",1,1,0,0,2
+"328",8,0,"white","female","reentr","yes","no",0,0,0,0,1
+"329",1,1,"white","female","reentr","yes","no",0,0,0,0,1
+"330",8,1,"nonwhite","female","lose","no","no",1,0,0,0,1
+"331",35,0,"white","male","lose","yes","no",1,1,1,1,4
+"332",12,1,"white","male","reentr","no","no",0,0,0,0,1
+"333",52,0,"nonwhite","female","reentr","no","no",1,0,0,1,1
+"334",25,0,"nonwhite","female","reentr","no","no",1,1,1,1,4
+"335",26,0,"nonwhite","male","new","no","no",1,0,0,1,1
+"336",18,0,"nonwhite","female","leave","no","no",1,1,1,1,2
+"337",2,1,"nonwhite","male","lose","no","no",1,0,0,0,1
+"338",28,0,"nonwhite","female","lose","yes","no",1,1,1,1,3
+"339",2,1,"white","male","lose","no","no",0,0,0,0,1
+"340",11,1,"white","male","lose","no","no",1,0,1,0,1
+"341",1,1,"nonwhite","female","reentr","no","no",0,0,0,0,1
+"342",2,1,"nonwhite","male","lose","no","no",1,0,1,0,1
+"343",17,1,"white","male","lose","yes","no",1,0,0,0,1
+"344",6,1,"white","male","lose","no","no",1,0,0,0,1
+"345",2,1,"white","female","lose","no","no",0,0,0,0,1
+"346",1,1,"white","female","reentr","yes","no",1,0,1,0,1
+"347",8,1,"white","female","reentr","no","no",1,0,0,0,1
+"348",7,0,"white","male","lose","no","no",1,1,1,1,2
+"349",14,1,"nonwhite","female","leave","no","yes",1,1,1,0,3
+"350",9,0,"nonwhite","female","leave","yes","yes",0,1,0,0,1
+"351",1,1,"white","male","lose","yes","yes",1,0,1,0,1
+"352",1,0,"white","female","lose","yes","no",1,0,0,1,1
+"353",17,1,"nonwhite","female","reentr","yes","no",1,1,0,0,2
+"354",29,0,"nonwhite","male","lose","no","yes",1,1,1,1,4
+"355",4,1,"white","male","new","no","no",0,0,0,0,1
+"356",9,0,"nonwhite","male","leave","yes","no",0,0,0,0,2
+"357",26,1,"white","male","leave","no","no",0,1,0,0,1
+"358",39,0,"white","female","leave","no","no",1,1,1,1,4
+"359",3,0,"nonwhite","male","lose","no","no",1,0,0,1,1
+"360",17,0,"white","male","leave","no","no",1,1,1,1,2
+"361",19,0,"nonwhite","male","lose","no","no",1,0,0,1,1
+"362",29,0,"nonwhite","male","lose","no","yes",1,1,1,1,4
+"363",2,1,"white","female","lose","no","no",1,0,1,0,1
+"364",13,0,"nonwhite","male","lose","yes","yes",1,0,0,1,1
+"365",30,1,"nonwhite","male","reentr","no","no",1,0,0,0,1
+"366",4,1,"nonwhite","male","new","yes","yes",0,0,0,0,1
+"367",1,0,"white","female","lose","no","no",0,0,0,0,1
+"368",5,0,"nonwhite","male","lose","no","no",1,1,1,0,2
+"369",6,0,"nonwhite","male","reentr","yes","yes",0,1,0,0,1
+"370",1,1,"white","female","lose","no","no",0,0,0,0,1
+"371",4,1,"white","male","reentr","yes","yes",1,0,0,0,1
+"372",15,1,"white","male","leave","no","no",1,1,0,0,2
+"373",2,1,"white","male","leave","yes","no",1,0,0,0,1
+"374",6,1,"white","female","lose","yes","no",1,0,0,0,1
+"375",2,0,"white","male","leave","no","no",1,0,0,1,1
+"376",29,0,"white","male","lose","no","no",1,1,1,1,4
+"377",1,1,"white","male","reentr","no","no",0,0,0,0,1
+"378",2,1,"white","female","reentr","yes","no",1,0,0,0,1
+"379",12,1,"white","female","lose","no","no",0,1,0,0,1
+"380",35,1,"white","male","reentr","no","no",1,0,1,0,1
+"381",13,1,"white","male","lose","no","yes",1,1,0,0,2
+"382",17,0,"white","male","lose","yes","no",1,1,1,1,4
+"383",2,1,"white","female","reentr","yes","no",0,1,0,0,1
+"384",0,1,"white","male","leave","no","no",0,1,0,0,1
+"385",1,1,"white","male","lose","no","no",1,0,1,0,1
+"386",10,1,"white","female","lose","yes","yes",0,1,0,0,1
+"387",13,1,"nonwhite","male","reentr","yes","yes",1,0,0,0,1
+"388",6,1,"white","female","reentr","yes","yes",1,0,0,0,1
+"389",1,1,"white","female","lose","no","no",0,0,0,0,1
+"390",6,1,"white","male","new","no","no",1,1,0,0,2
+"391",52,1,"white","male","lose","yes","no",1,0,0,1,1
+"392",8,1,"white","male","new","yes","no",1,0,0,0,1
+"393",12,0,"white","female","new","no","no",1,1,0,0,2
+"394",26,1,"nonwhite","male","leave","no","yes",1,1,0,0,2
+"395",52,1,"white","female","reentr","no","yes",1,0,0,0,1
+"396",9,1,"nonwhite","male","lose","yes","no",1,0,0,0,1
+"397",12,0,"white","male","lose","no","no",1,0,0,1,1
+"398",22,0,"white","female","lose","no","no",1,1,1,1,4
+"399",16,1,"white","female","reentr","yes","no",1,1,1,0,3
+"400",2,1,"white","female","reentr","no","no",0,1,0,0,1
+"401",61,0,"white","female","reentr","no","no",0,0,0,0,3
+"402",2,1,"nonwhite","male","leave","yes","no",1,0,0,0,1
+"403",52,0,"white","female","reentr","no","no",1,0,1,0,1
+"404",9,1,"nonwhite","female","new","no","no",1,1,0,0,2
+"405",39,1,"white","male","leave","no","no",1,1,1,0,2
+"406",26,1,"white","male","lose","no","yes",1,1,1,0,2
+"407",8,1,"white","male","leave","no","no",1,0,0,0,2
+"408",3,1,"white","male","lose","no","no",0,1,0,0,1
+"409",5,1,"white","female","lose","no","no",1,1,0,0,2
+"410",6,0,"nonwhite","male","reentr","yes","no",1,0,0,1,1
+"411",52,1,"nonwhite","male","reentr","yes","no",1,0,0,0,1
+"412",3,0,"nonwhite","female","reentr","no","no",1,0,0,1,1
+"413",4,1,"nonwhite","male","reentr","no","no",1,0,0,0,1
+"414",20,1,"nonwhite","female","leave","no","no",1,1,1,0,3
+"415",2,1,"nonwhite","male","reentr","no","no",1,0,0,0,1
+"416",3,0,"nonwhite","male","lose","no","no",1,0,0,1,1
+"417",52,1,"white","male","lose","yes","yes",1,0,0,0,1
+"418",21,0,"white","male","reentr","no","no",1,1,1,1,4
+"419",65,0,"white","male","leave","no","no",1,1,1,1,4
+"420",4,0,"white","female","new","no","no",1,0,0,1,1
+"421",3,1,"white","male","reentr","yes","no",1,0,1,0,1
+"422",4,1,"white","male","leave","yes","no",1,0,0,0,1
+"423",52,0,"white","female","lose","no","no",1,0,0,1,1
+"424",16,0,"white","female","reentr","yes","yes",1,1,0,0,2
+"425",86,1,"white","male","lose","no","yes",1,1,1,0,3
+"426",12,1,"white","male","lose","yes","yes",1,0,0,0,1
+"427",1,1,"white","male","leave","no","no",1,0,0,0,1
+"428",17,0,"white","female","leave","no","no",1,1,1,1,4
+"429",4,1,"white","male","leave","no","no",0,0,0,0,1
+"430",34,0,"white","male","lose","no","no",1,1,1,0,3
+"431",1,1,"white","female","reentr","no","no",1,0,0,0,1
+"432",38,0,"white","male","lose","yes","no",1,1,1,0,3
+"433",21,0,"white","male","leave","no","yes",1,1,1,1,4
+"434",60,1,"white","female","lose","no","no",0,0,0,0,3
+"435",2,1,"white","male","lose","yes","no",1,0,1,0,1
+"436",14,0,"white","male","lose","no","yes",1,1,1,1,4
+"437",1,1,"white","male","lose","no","no",0,0,0,0,1
+"438",8,1,"nonwhite","female","leave","no","no",1,1,0,0,2
+"439",1,0,"white","female","reentr","yes","no",1,0,0,1,1
+"440",4,0,"white","male","lose","no","no",1,0,0,1,1
+"441",3,1,"nonwhite","male","leave","no","no",0,1,0,0,1
+"442",2,0,"white","male","reentr","no","no",0,0,0,0,1
+"443",4,1,"white","female","lose","no","no",1,0,0,0,1
+"444",30,1,"white","female","reentr","yes","no",1,0,0,0,1
+"445",6,0,"white","male","reentr","no","no",0,0,0,0,2
+"446",7,1,"white","male","leave","no","no",1,1,1,0,2
+"447",6,1,"white","female","leave","no","no",1,1,0,0,2
+"448",43,0,"nonwhite","female","lose","no","no",1,1,1,0,2
+"449",12,1,"nonwhite","female","reentr","no","no",1,1,1,0,2
+"450",52,1,"white","female","leave","no","no",1,0,1,0,1
+"451",12,1,"nonwhite","female","reentr","no","no",1,1,1,0,3
+"452",21,0,"white","male","reentr","no","no",0,0,0,0,3

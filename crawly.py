@@ -19,7 +19,7 @@ path_to_chromedriver = "/Users/Admin/Desktop/chromedriver"
 
 
 # Same as client load but much more lightweight
-def load(url, headers = {}):
+def load(url, params = None, headers = {}):
 
     if not headers: 
         headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'}
@@ -27,7 +27,7 @@ def load(url, headers = {}):
         headers = None
 
     try:
-        response = requests.get(url, headers = headers)
+        response = requests.get(url, params = params, headers = headers)
 
     except:
         print "[ERROR] Connection error."  
@@ -44,7 +44,7 @@ def load(url, headers = {}):
 
 
 # This function fetches the website and returns an html object
-def client_load(url, client = None, headers = {}):
+def client_load(url, params = None, client = None, headers = {}):
 
 
     if not headers: 
@@ -60,7 +60,7 @@ def client_load(url, client = None, headers = {}):
             print "[ERROR] Session Error."  
 
     try:
-        response = client.get(url, headers = headers)
+        response = client.get(url, params = params, headers = headers)
 
     except:
         print "[ERROR] Connection error."  

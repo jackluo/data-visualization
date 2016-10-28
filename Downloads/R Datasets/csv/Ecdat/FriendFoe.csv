@@ -1,501 +1,228 @@
-"","Sleep","Sleep7","SmokeLife","SmokeDaily","MarijuaEver","Age"
-"1","",NA,"No","",0,16
-"2","8 hours",1,"Yes","Yes",1,16
-"3","5 hours",0,"Yes","Yes",1,17
-"4","5 hours",0,"Yes","Yes",1,18
-"5","7 hours",1,"Yes","No",1,17
-"6","4 or less hours",0,"No","No",0,15
-"7","6 hours",0,"No","No",0,17
-"8","7 hours",1,"No","No",0,17
-"9","8 hours",1,"Yes","No",0,16
-"10","8 hours",1,"No","No",0,16
-"11","4 or less hours",0,"Yes","Yes",1,18
-"12","6 hours",0,"Yes","No",1,15
-"13","7 hours",1,"No","No",0,15
-"14","8 hours",1,"No","No",0,16
-"15","5 hours",0,"Yes","Yes",1,16
-"16","7 hours",1,"No","No",0,16
-"17","7 hours",1,"No","No",0,17
-"18","8 hours",1,"Yes","No",0,16
-"19","7 hours",1,"Yes","No",1,16
-"20","8 hours",1,"Yes","No",1,16
-"21","7 hours",1,"Yes","No",1,14
-"22","8 hours",1,"No","No",1,17
-"23","7 hours",1,"No","No",0,16
-"24","6 hours",0,"No","No",0,16
-"25","6 hours",0,"No","No",0,16
-"26","10 or more hours",1,"Yes","No",1,17
-"27","8 hours",1,"No","No",1,15
-"28","7 hours",1,"Yes","No",1,17
-"29","8 hours",1,"Yes","No",1,14
-"30","7 hours",1,"No","No",0,16
-"31","8 hours",1,"No","No",0,15
-"32","",NA,"Yes","No",1,18
-"33","8 hours",1,"Yes","No",1,18
-"34","6 hours",0,"No","No",0,15
-"35","9 hours",1,"No","No",0,17
-"36","",NA,"No","No",0,17
-"37","6 hours",0,"Yes","No",1,17
-"38","7 hours",1,"No","No",0,16
-"39","5 hours",0,"No","No",0,18
-"40","7 hours",1,"Yes","No",1,15
-"41","10 or more hours",1,"No","No",0,17
-"42","7 hours",1,"Yes","Yes",1,18
-"43","6 hours",0,"No","No",0,16
-"44","6 hours",0,"Yes","No",0,16
-"45","10 or more hours",1,"Yes","No",0,17
-"46","8 hours",1,"No","No",0,16
-"47","7 hours",1,"No","No",0,14
-"48","",NA,"Yes","",0,15
-"49","6 hours",0,"No","No",0,18
-"50","8 hours",1,"No","No",0,14
-"51","7 hours",1,"Yes","No",NA,17
-"52","9 hours",1,"Yes","No",0,14
-"53","7 hours",1,"Yes","No",0,15
-"54","7 hours",1,"No","No",0,16
-"55","7 hours",1,"No","No",0,18
-"56","5 hours",0,"Yes","Yes",1,17
-"57","8 hours",1,"No","No",0,16
-"58","7 hours",1,"Yes","No",1,17
-"59","7 hours",1,"Yes","No",1,18
-"60","8 hours",1,"Yes","No",1,18
-"61","7 hours",1,"No","No",0,15
-"62","6 hours",0,"No","No",0,14
-"63","7 hours",1,"Yes","No",1,18
-"64","7 hours",1,"Yes","No",0,15
-"65","7 hours",1,"No","No",0,16
-"66","6 hours",0,"Yes","No",0,17
-"67","8 hours",1,"","",0,14
-"68","7 hours",1,"Yes","No",1,15
-"69","7 hours",1,"No","No",0,15
-"70","",NA,"No","",0,16
-"71","7 hours",1,"Yes","No",1,16
-"72","8 hours",1,"No","No",0,18
-"73","9 hours",1,"Yes","No",1,18
-"74","6 hours",0,"No","No",0,16
-"75","",NA,"Yes","No",1,17
-"76","4 or less hours",0,"Yes","No",NA,15
-"77","7 hours",1,"Yes","No",1,15
-"78","",NA,"No","",0,18
-"79","5 hours",0,"No","No",1,16
-"80","10 or more hours",1,"No","No",0,15
-"81","",NA,"No","No",1,18
-"82","8 hours",1,"Yes","No",0,15
-"83","6 hours",0,"Yes","No",1,16
-"84","7 hours",1,"Yes","No",0,16
-"85","7 hours",1,"No","No",0,18
-"86","5 hours",0,"Yes","No",1,18
-"87","5 hours",0,"Yes","No",0,14
-"88","",NA,"No","No",0,14
-"89","8 hours",1,"No","No",0,14
-"90","6 hours",0,"No","No",0,18
-"91","6 hours",0,"No","No",0,18
-"92","",NA,"No","No",1,15
-"93","7 hours",1,"Yes","No",1,18
-"94","8 hours",1,"No","No",0,18
-"95","8 hours",1,"No","No",1,15
-"96","",NA,"","",1,15
-"97","8 hours",1,"No","No",1,18
-"98","7 hours",1,"No","No",0,16
-"99","6 hours",0,"Yes","No",1,15
-"100","4 or less hours",0,"Yes","No",1,17
-"101","9 hours",1,"Yes","No",0,15
-"102","4 or less hours",0,"Yes","No",1,16
-"103","8 hours",1,"No","No",0,14
-"104","6 hours",0,"","No",1,18
-"105","8 hours",1,"Yes","No",1,17
-"106","5 hours",0,"Yes","No",1,15
-"107","7 hours",1,"No","No",0,16
-"108","",NA,"No","No",0,16
-"109","9 hours",1,"No","No",0,14
-"110","7 hours",1,"Yes","No",0,15
-"111","6 hours",0,"No","No",0,15
-"112","8 hours",1,"No","No",0,17
-"113","6 hours",0,"Yes","No",0,15
-"114","6 hours",0,"No","No",0,16
-"115","10 or more hours",1,"Yes","No",1,17
-"116","8 hours",1,"No","No",0,14
-"117","4 or less hours",0,"Yes","No",0,16
-"118","7 hours",1,"No","No",0,14
-"119","7 hours",1,"Yes","No",1,16
-"120","",NA,"Yes","",1,17
-"121","6 hours",0,"No","No",0,15
-"122","7 hours",1,"Yes","No",1,17
-"123","7 hours",1,"Yes","No",0,16
-"124","8 hours",1,"No","No",0,17
-"125","6 hours",0,"Yes","Yes",1,17
-"126","6 hours",0,"No","No",0,16
-"127","7 hours",1,"Yes","No",0,14
-"128","6 hours",0,"Yes","Yes",1,16
-"129","7 hours",1,"Yes","No",1,15
-"130","8 hours",1,"No","No",0,17
-"131","7 hours",1,"Yes","No",NA,17
-"132","7 hours",1,"Yes","No",0,17
-"133","6 hours",0,"No","No",0,17
-"134","9 hours",1,"Yes","No",1,16
-"135","7 hours",1,"No","No",0,15
-"136","8 hours",1,"Yes","Yes",1,15
-"137","4 or less hours",0,"Yes","No",0,17
-"138","9 hours",1,"Yes","No",1,15
-"139","4 or less hours",0,"Yes","No",0,15
-"140","5 hours",0,"Yes","No",1,18
-"141","5 hours",0,"No","No",0,14
-"142","8 hours",1,"No","No",0,17
-"143","8 hours",1,"No","No",1,18
-"144","7 hours",1,"Yes","No",0,15
-"145","7 hours",1,"Yes","Yes",1,15
-"146","8 hours",1,"No","No",0,16
-"147","7 hours",1,"Yes","No",1,18
-"148","9 hours",1,"Yes","",1,16
-"149","6 hours",0,"Yes","No",1,18
-"150","7 hours",1,"No","No",0,15
-"151","8 hours",1,"No","No",1,15
-"152","8 hours",1,"No","No",0,15
-"153","4 or less hours",0,"Yes","Yes",1,14
-"154","9 hours",1,"No","No",0,14
-"155","8 hours",1,"","No",NA,17
-"156","6 hours",0,"Yes","No",0,16
-"157","9 hours",1,"Yes","No",0,14
-"158","5 hours",0,"Yes","No",0,16
-"159","6 hours",0,"No","No",0,17
-"160","7 hours",1,"No","No",0,17
-"161","5 hours",0,"No","No",0,17
-"162","6 hours",0,"No","No",0,17
-"163","7 hours",1,"No","No",1,17
-"164","7 hours",1,"No","No",1,16
-"165","7 hours",1,"No","No",0,14
-"166","9 hours",1,"Yes","No",0,18
-"167","9 hours",1,"No","No",0,15
-"168","7 hours",1,"Yes","Yes",1,16
-"169","8 hours",1,"No","No",0,15
-"170","",NA,"No","",0,16
-"171","7 hours",1,"Yes","No",1,15
-"172","",NA,"No","No",0,15
-"173","9 hours",1,"No","No",0,17
-"174","6 hours",0,"Yes","Yes",1,17
-"175","8 hours",1,"Yes","No",1,18
-"176","9 hours",1,"Yes","No",0,15
-"177","",NA,"No","No",0,17
-"178","8 hours",1,"Yes","No",1,15
-"179","8 hours",1,"No","No",0,18
-"180","6 hours",0,"No","No",1,16
-"181","7 hours",1,"Yes","Yes",1,16
-"182","4 or less hours",0,"Yes","No",1,16
-"183","8 hours",1,"No","No",1,16
-"184","8 hours",1,"No","No",0,16
-"185","6 hours",0,"No","No",0,17
-"186","5 hours",0,"Yes","No",1,17
-"187","8 hours",1,"No","No",0,17
-"188","8 hours",1,"Yes","Yes",1,14
-"189","8 hours",1,"No","No",0,15
-"190","7 hours",1,"No","No",0,16
-"191","",NA,"No","No",0,16
-"192","8 hours",1,"No","No",0,14
-"193","9 hours",1,"No","No",0,15
-"194","4 or less hours",0,"Yes","No",1,14
-"195","",NA,"No","No",NA,16
-"196","8 hours",1,"No","No",0,17
-"197","7 hours",1,"No","No",0,15
-"198","5 hours",0,"Yes","No",1,18
-"199","6 hours",0,"Yes","Yes",1,15
-"200","8 hours",1,"No","No",0,17
-"201","8 hours",1,"No","No",0,15
-"202","7 hours",1,"No","No",0,16
-"203","8 hours",1,"No","No",0,15
-"204","6 hours",0,"No","No",0,16
-"205","8 hours",1,"No","No",0,18
-"206","7 hours",1,"No","No",0,16
-"207","5 hours",0,"Yes","Yes",1,16
-"208","7 hours",1,"No","No",0,17
-"209","7 hours",1,"Yes","Yes",1,17
-"210","5 hours",0,"Yes","No",0,16
-"211","5 hours",0,"Yes","No",1,17
-"212","8 hours",1,"No","No",0,16
-"213","8 hours",1,"Yes","No",0,17
-"214","7 hours",1,"Yes","No",0,15
-"215","7 hours",1,"No","No",0,15
-"216","7 hours",1,"Yes","No",1,15
-"217","",NA,"","",0,15
-"218","6 hours",0,"No","No",0,18
-"219","8 hours",1,"No","No",0,15
-"220","6 hours",0,"No","No",0,15
-"221","",NA,"Yes","No",1,17
-"222","7 hours",1,"No","No",0,18
-"223","7 hours",1,"No","No",0,16
-"224","7 hours",1,"Yes","No",0,16
-"225","4 or less hours",0,"Yes","Yes",1,15
-"226","",NA,"Yes","No",NA,15
-"227","",NA,"Yes","No",1,16
-"228","8 hours",1,"Yes","No",1,18
-"229","",NA,"","",1,17
-"230","7 hours",1,"No","No",0,17
-"231","8 hours",1,"Yes","No",1,16
-"232","9 hours",1,"No","No",0,15
-"233","4 or less hours",0,"Yes","No",1,14
-"234","6 hours",0,"No","No",0,16
-"235","8 hours",1,"","No",NA,17
-"236","6 hours",0,"No","No",0,14
-"237","6 hours",0,"Yes","No",1,16
-"238","8 hours",1,"No","No",0,15
-"239","8 hours",1,"No","No",0,15
-"240","8 hours",1,"No","No",0,15
-"241","7 hours",1,"Yes","No",1,17
-"242","6 hours",0,"No","No",0,15
-"243","6 hours",0,"No","No",0,15
-"244","",NA,"Yes","No",0,16
-"245","",NA,"No","",0,15
-"246","8 hours",1,"Yes","No",1,18
-"247","7 hours",1,"No","No",0,16
-"248","",NA,"","",0,18
-"249","5 hours",0,"No","No",0,18
-"250","8 hours",1,"No","No",0,15
-"251","5 hours",0,"Yes","No",1,17
-"252","6 hours",0,"Yes","Yes",1,17
-"253","7 hours",1,"No","No",0,15
-"254","8 hours",1,"Yes","No",1,15
-"255","7 hours",1,"No","No",0,18
-"256","5 hours",0,"Yes","No",0,17
-"257","8 hours",1,"Yes","No",0,16
-"258","9 hours",1,"No","No",0,16
-"259","7 hours",1,"No","No",0,18
-"260","5 hours",0,"No","No",0,15
-"261","5 hours",0,"No","No",0,15
-"262","4 or less hours",0,"Yes","Yes",NA,15
-"263","7 hours",1,"Yes","No",1,17
-"264","8 hours",1,"No","No",1,17
-"265","7 hours",1,"Yes","No",0,14
-"266","8 hours",1,"Yes","Yes",1,15
-"267","7 hours",1,"No","No",0,18
-"268","8 hours",1,"No","No",0,17
-"269","7 hours",1,"No","No",0,17
-"270","7 hours",1,"Yes","No",1,16
-"271","5 hours",0,"Yes","No",0,18
-"272","8 hours",1,"No","No",0,15
-"273","",NA,"Yes","",1,15
-"274","7 hours",1,"No","No",0,17
-"275","7 hours",1,"No","No",0,15
-"276","",NA,"No","",0,17
-"277","8 hours",1,"Yes","No",0,17
-"278","4 or less hours",0,"No","No",1,16
-"279","6 hours",0,"No","No",0,17
-"280","6 hours",0,"Yes","No",0,15
-"281","7 hours",1,"No","No",0,16
-"282","",NA,"No","",0,16
-"283","",NA,"","",1,17
-"284","6 hours",0,"Yes","No",0,16
-"285","8 hours",1,"No","No",0,15
-"286","6 hours",0,"Yes","No",0,15
-"287","5 hours",0,"No","No",1,16
-"288","",NA,"","",0,15
-"289","7 hours",1,"Yes","No",0,15
-"290","4 or less hours",0,"No","No",0,14
-"291","5 hours",0,"Yes","Yes",0,18
-"292","",NA,"Yes","No",0,18
-"293","8 hours",1,"No","No",0,17
-"294","10 or more hours",1,"No","No",0,17
-"295","7 hours",1,"No","No",0,14
-"296","7 hours",1,"Yes","No",1,18
-"297","6 hours",0,"No","No",0,16
-"298","7 hours",1,"Yes","No",0,15
-"299","6 hours",0,"No","No",0,17
-"300","",NA,"No","",0,15
-"301","6 hours",0,"Yes","No",1,17
-"302","7 hours",1,"","",NA,16
-"303","8 hours",1,"No","No",0,16
-"304","6 hours",0,"No","No",0,17
-"305","",NA,"","",1,16
-"306","6 hours",0,"No","No",0,16
-"307","4 or less hours",0,"No","No",0,18
-"308","5 hours",0,"Yes","No",1,17
-"309","8 hours",1,"No","No",0,17
-"310","7 hours",1,"Yes","No",0,16
-"311","8 hours",1,"No","No",0,18
-"312","",NA,"","",0,18
-"313","8 hours",1,"No","No",0,17
-"314","7 hours",1,"Yes","No",1,14
-"315","7 hours",1,"Yes","No",1,15
-"316","7 hours",1,"Yes","No",1,16
-"317","6 hours",0,"Yes","No",1,15
-"318","8 hours",1,"No","No",1,15
-"319","7 hours",1,"","No",0,16
-"320","6 hours",0,"No","No",0,18
-"321","8 hours",1,"No","No",0,15
-"322","",NA,"No","No",0,16
-"323","7 hours",1,"Yes","No",1,16
-"324","8 hours",1,"Yes","No",0,16
-"325","",NA,"No","No",0,18
-"326","7 hours",1,"Yes","No",1,18
-"327","6 hours",0,"No","No",0,17
-"328","6 hours",0,"No","No",0,15
-"329","10 or more hours",1,"Yes","No",1,15
-"330","5 hours",0,"Yes","No",1,15
-"331","9 hours",1,"No","No",0,15
-"332","7 hours",1,"No","No",0,15
-"333","7 hours",1,"No","No",0,16
-"334","7 hours",1,"No","No",0,17
-"335","6 hours",0,"Yes","No",1,18
-"336","",NA,"No","No",0,15
-"337","",NA,"No","No",1,16
-"338","7 hours",1,"No","No",0,15
-"339","",NA,"","",0,14
-"340","7 hours",1,"No","No",0,16
-"341","",NA,"No","No",0,15
-"342","5 hours",0,"Yes","No",1,16
-"343","7 hours",1,"No","No",0,15
-"344","6 hours",0,"Yes","No",1,15
-"345","9 hours",1,"No","No",0,14
-"346","4 or less hours",0,"Yes","Yes",1,17
-"347","",NA,"No","",0,15
-"348","10 or more hours",1,"No","No",0,15
-"349","7 hours",1,"No","No",0,18
-"350","",NA,"No","",0,15
-"351","6 hours",0,"Yes","No",1,17
-"352","8 hours",1,"No","No",0,14
-"353","",NA,"No","",0,17
-"354","",NA,"Yes","No",0,15
-"355","7 hours",1,"No","No",0,14
-"356","6 hours",0,"No","No",0,17
-"357","9 hours",1,"No","No",1,17
-"358","5 hours",0,"No","No",0,16
-"359","7 hours",1,"Yes","Yes",1,16
-"360","8 hours",1,"Yes","No",0,14
-"361","8 hours",1,"No","No",0,16
-"362","8 hours",1,"Yes","No",1,16
-"363","9 hours",1,"Yes","No",1,16
-"364","8 hours",1,"No","No",1,17
-"365","7 hours",1,"No","No",NA,18
-"366","7 hours",1,"No","No",0,16
-"367","6 hours",0,"No","No",0,16
-"368","6 hours",0,"No","No",0,17
-"369","",NA,"No","No",NA,17
-"370","6 hours",0,"No","No",0,18
-"371","7 hours",1,"Yes","Yes",1,16
-"372","8 hours",1,"No","No",0,15
-"373","9 hours",1,"No","No",0,17
-"374","8 hours",1,"","",1,17
-"375","6 hours",0,"No","No",1,14
-"376","7 hours",1,"No","No",0,18
-"377","7 hours",1,"Yes","No",1,17
-"378","9 hours",1,"No","No",0,15
-"379","8 hours",1,"No","No",0,14
-"380","6 hours",0,"No","No",0,15
-"381","4 or less hours",0,"No","No",0,17
-"382","9 hours",1,"No","No",0,15
-"383","6 hours",0,"Yes","Yes",1,16
-"384","8 hours",1,"Yes","No",1,18
-"385","8 hours",1,"No","No",0,16
-"386","",NA,"","No",0,16
-"387","8 hours",1,"No","No",0,14
-"388","",NA,"Yes","No",1,17
-"389","6 hours",0,"No","No",NA,18
-"390","",NA,"No","No",0,14
-"391","8 hours",1,"No","No",0,17
-"392","7 hours",1,"No","No",NA,17
-"393","4 or less hours",0,"No","No",NA,16
-"394","8 hours",1,"No","No",0,18
-"395","7 hours",1,"No","No",0,17
-"396","9 hours",1,"No","No",0,14
-"397","8 hours",1,"Yes","No",1,16
-"398","9 hours",1,"No","No",0,17
-"399","7 hours",1,"Yes","No",1,16
-"400","8 hours",1,"No","No",0,15
-"401","5 hours",0,"Yes","Yes",1,17
-"402","6 hours",0,"Yes","No",1,16
-"403","8 hours",1,"Yes","No",0,16
-"404","7 hours",1,"No","No",0,15
-"405","6 hours",0,"No","No",0,17
-"406","",NA,"No","",0,18
-"407","6 hours",0,"No","No",0,15
-"408","7 hours",1,"Yes","No",0,16
-"409","8 hours",1,"No","No",0,14
-"410","7 hours",1,"No","No",0,16
-"411","8 hours",1,"No","No",0,15
-"412","7 hours",1,"No","No",1,15
-"413","8 hours",1,"No","No",0,16
-"414","8 hours",1,"No","No",0,17
-"415","8 hours",1,"Yes","Yes",1,18
-"416","",NA,"","",1,16
-"417","5 hours",0,"Yes","Yes",1,18
-"418","6 hours",0,"Yes","No",1,18
-"419","",NA,"No","",0,16
-"420","5 hours",0,"No","No",0,18
-"421","7 hours",1,"No","No",0,17
-"422","5 hours",0,"No","No",0,14
-"423","6 hours",0,"Yes","Yes",0,17
-"424","7 hours",1,"Yes","No",0,15
-"425","7 hours",1,"Yes","",1,18
-"426","7 hours",1,"No","No",1,17
-"427","5 hours",0,"Yes","No",1,16
-"428","7 hours",1,"No","No",0,17
-"429","6 hours",0,"No","No",0,18
-"430","5 hours",0,"Yes","Yes",1,17
-"431","6 hours",0,"No","No",0,15
-"432","7 hours",1,"No","No",0,14
-"433","9 hours",1,"Yes","No",0,14
-"434","6 hours",0,"No","No",0,18
-"435","6 hours",0,"Yes","No",0,14
-"436","4 or less hours",0,"Yes","No",0,17
-"437","4 or less hours",0,"Yes","Yes",0,17
-"438","4 or less hours",0,"Yes","Yes",1,15
-"439","7 hours",1,"No","No",0,16
-"440","8 hours",1,"No","No",0,15
-"441","8 hours",1,"No","No",0,16
-"442","7 hours",1,"Yes","Yes",1,18
-"443","9 hours",1,"No","No",1,14
-"444","4 or less hours",0,"Yes","Yes",1,16
-"445","7 hours",1,"No","No",1,16
-"446","6 hours",0,"Yes","No",1,17
-"447","7 hours",1,"Yes","No",0,17
-"448","8 hours",1,"No","No",0,16
-"449","7 hours",1,"","No",NA,14
-"450","7 hours",1,"No","No",0,17
-"451","6 hours",0,"No","No",0,15
-"452","7 hours",1,"No","No",0,16
-"453","8 hours",1,"Yes","No",1,16
-"454","6 hours",0,"No","No",0,15
-"455","8 hours",1,"No","No",1,16
-"456","9 hours",1,"No","No",0,17
-"457","8 hours",1,"Yes","No",1,17
-"458","7 hours",1,"Yes","No",1,18
-"459","6 hours",0,"No","No",0,15
-"460","6 hours",0,"Yes","No",1,17
-"461","6 hours",0,"No","No",0,18
-"462","",NA,"","",1,17
-"463","7 hours",1,"Yes","No",0,17
-"464","9 hours",1,"No","No",0,16
-"465","8 hours",1,"No","No",0,15
-"466","6 hours",0,"Yes","No",1,16
-"467","7 hours",1,"Yes","No",1,18
-"468","9 hours",1,"No","No",0,15
-"469","8 hours",1,"Yes","No",1,14
-"470","7 hours",1,"No","No",0,15
-"471","7 hours",1,"Yes","No",0,16
-"472","6 hours",0,"No","No",0,15
-"473","",NA,"","",0,15
-"474","8 hours",1,"No","No",0,15
-"475","9 hours",1,"No","No",1,14
-"476","6 hours",0,"Yes","Yes",1,14
-"477","8 hours",1,"Yes","No",1,17
-"478","8 hours",1,"No","No",0,16
-"479","8 hours",1,"Yes","No",0,15
-"480","8 hours",1,"No","No",0,15
-"481","8 hours",1,"Yes","No",0,16
-"482","7 hours",1,"No","No",0,16
-"483","7 hours",1,"No","No",0,15
-"484","6 hours",0,"Yes","No",1,16
-"485","7 hours",1,"No","No",0,15
-"486","6 hours",0,"No","No",0,17
-"487","8 hours",1,"No","No",1,18
-"488","7 hours",1,"Yes","No",1,18
-"489","6 hours",0,"Yes","Yes",1,15
-"490","6 hours",0,"Yes","No",0,18
-"491","6 hours",0,"Yes","No",0,15
-"492","8 hours",1,"Yes","No",1,17
-"493","8 hours",1,"Yes","No",0,15
-"494","7 hours",1,"Yes","No",1,18
-"495","7 hours",1,"No","No",0,16
-"496","7 hours",1,"Yes","Yes",1,18
-"497","6 hours",0,"Yes","No",0,15
-"498","8 hours",1,"No","No",1,17
-"499","7 hours",1,"No","No",0,15
-"500","7 hours",1,"Yes","No",1,16
+"","sex","white","age","play","round","season","cash","sex1","white1","age1","play1","win","win1"
+"1","male","yes",20,"foe","1","1",1.2,"male","yes",32,"friend",1.2,0
+"2","male","yes",40,"foe","3","1",7.7,"female","yes",31,"foe",0,0
+"3","female","no",35,"foe","2","1",3.2,"female","no",24,"foe",0,0
+"4","male","yes",26,"friend","1","1",1.2,"male","yes",40,"friend",0.6,0.6
+"5","female","yes",40,"friend","3","1",5.7,"male","yes",26,"foe",0,5.7
+"6","female","yes",28,"foe","2","1",3.7,"female","yes",23,"friend",3.7,0
+"7","female","yes",26,"friend","1","1",1.2,"female","yes",48,"friend",0.6,0.6
+"8","male","no",30,"foe","3","1",7.2,"male","no",27,"friend",7.2,0
+"9","female","yes",30,"friend","2","1",3.7,"male","yes",22,"foe",0,3.7
+"10","female","yes",25,"friend","1","1",0.7,"male","yes",61,"friend",0.35,0.35
+"11","male","yes",24,"foe","2","1",2.2,"male","yes",32,"foe",0,0
+"12","female","yes",31,"foe","3","1",5.2,"female","yes",41,"friend",5.2,0
+"13","female","yes",55,"foe","1","1",0.7,"male","yes",25,"friend",0.7,0
+"14","male","yes",37,"friend","3","1",5.7,"male","yes",19,"foe",0,5.7
+"15","female","yes",24,"foe","2","1",1.7,"female","yes",36,"foe",0,0
+"16","female","no",31,"foe","1","1",1.2,"male","no",37,"friend",1.2,0
+"17","male","yes",24,"foe","3","1",9.2,"female","yes",49,"foe",0,0
+"18","female","yes",27,"foe","2","1",2.7,"male","yes",22,"foe",0,0
+"19","male","yes",22,"foe","1","1",0.7,"female","yes",21,"foe",0,0
+"20","male","yes",40,"friend","3","1",4.2,"male","yes",23,"foe",0,4.2
+"21","male","yes",26,"friend","2","1",3.2,"male","yes",27,"foe",0,3.2
+"22","female","yes",27,"friend","3","1",5.2,"male","yes",26,"foe",0,5.2
+"23","female","yes",40,"friend","1","1",1.2,"female","yes",24,"friend",0.6,0.6
+"24","male","yes",22,"foe","2","1",2.7,"male","yes",31,"friend",2.7,0
+"25","female","yes",31,"foe","3","1",5.7,"female","yes",31,"friend",5.7,0
+"26","male","yes",20,"foe","1","1",0.7,"female","yes",30,"friend",0.7,0
+"27","male","no",39,"friend","2","1",1.2,"female","no",35,"friend",0.6,0.6
+"28","female","no",30,"friend","1","1",3.2,"male","no",36,"foe",0,3.2
+"29","female","yes",25,"friend","3","1",6.2,"male","yes",29,"friend",3.1,3.1
+"30","male","no",44,"friend","2","1",5.2,"female","no",24,"friend",2.6,2.6
+"31","female","yes",43,"foe","2","1",3.2,"male","yes",39,"foe",0,0
+"32","female","yes",31,"foe","1","1",1.2,"male","yes",30,"foe",0,0
+"33","male","yes",30,"friend","3","1",8.2,"male","yes",46,"friend",4.1,4.1
+"34","female","no",25,"friend","3","1",3.7,"male","no",24,"foe",0,3.7
+"35","female","yes",29,"friend","1","1",1.2,"female","yes",40,"foe",0,1.2
+"36","female","yes",44,"foe","1","1",1.2,"female","yes",26,"friend",1.2,0
+"37","male","yes",37,"foe","3","1",8.7,"male","yes",29,"foe",0,0
+"38","female","yes",24,"friend","2","1",4.2,"male","yes",24,"friend",2.1,2.1
+"39","female","yes",18,"friend","1","1",0.7,"male","yes",38,"friend",0.35,0.35
+"40","male","yes",34,"friend","3","1",16.4,"male","yes",26,"foe",0,16.4
+"41","female","yes",34,"friend","1","1",0.2,"female","yes",29,"foe",0,0.2
+"42","female","yes",33,"friend","2","1",8.2,"male","yes",19,"friend",4.1,4.1
+"43","male","yes",29,"friend","3","1",2.2,"female","yes",22,"foe",0,2.2
+"44","female","yes",42,"foe","1","1",1.2,"male","yes",35,"foe",0,0
+"45","female","yes",25,"friend","1","1",1.2,"male","yes",26,"friend",0.6,0.6
+"46","male","yes",32,"foe","3","1",6.7,"male","yes",40,"friend",6.7,0
+"47","female","no",29,"foe","1","1",3.2,"female","no",49,"friend",3.2,0
+"48","male","yes",28,"foe","2","2",5.5,"female","yes",23,"foe",0,0
+"49","female","yes",22,"friend","1","2",0.5,"male","yes",37,"friend",0.25,0.25
+"50","male","yes",22,"friend","2","2",2,"female","yes",32,"foe",0,2
+"51","female","yes",24,"friend","3","1",7.2,"male","yes",37,"foe",0,7.2
+"52","male","yes",30,"foe","3","1",2.2,"male","yes",27,"foe",0,0
+"53","female","yes",42,"friend","2","1",1.2,"female","yes",29,"friend",0.6,0.6
+"54","male","no",41,"friend","1","1",0.7,"female","no",31,"foe",0,0.7
+"55","female","yes",20,"foe","2","1",3.7,"female","yes",36,"friend",3.7,0
+"56","male","yes",31,"friend","3","1",8.7,"male","yes",31,"friend",4.35,4.35
+"57","female","yes",33,"friend","1","1",2.2,"female","yes",28,"friend",1.1,1.1
+"58","male","yes",37,"friend","3","1",9.2,"male","yes",27,"foe",0,9.2
+"59","female","no",28,"friend","1","1",0.7,"male","no",20,"foe",0,0.7
+"60","male","yes",22,"foe","1","1",0.7,"male","yes",34,"foe",0,0
+"61","female","yes",18,"friend","1","1",4.7,"female","yes",25,"foe",0,4.7
+"62","male","yes",57,"friend","3","1",9.2,"female","yes",44,"foe",0,9.2
+"63","female","yes",23,"friend","2","1",6.2,"male","yes",28,"foe",0,6.2
+"64","male","yes",27,"foe","1","1",1.7,"female","yes",50,"friend",1.7,0
+"65","female","yes",32,"foe","1","1",1.7,"male","yes",38,"friend",1.7,0
+"66","female","yes",33,"foe","3","2",6,"male","yes",21,"foe",0,0
+"67","male","yes",22,"foe","2","2",0.5,"female","yes",22,"foe",0,0
+"68","female","no",22,"foe","3","2",3,"male","no",40,"friend",3,0
+"69","female","no",19,"foe","1","2",0.2,"female","no",21,"friend",0.2,0
+"70","male","yes",48,"foe","1","2",2.5,"male","yes",22,"foe",0,0
+"71","male","yes",25,"friend","3","2",7.5,"female","yes",31,"foe",0,7.5
+"72","female","yes",23,"foe","2","2",4.5,"male","yes",25,"foe",0,0
+"73","male","yes",23,"friend","3","2",10,"female","yes",31,"foe",0,10
+"74","female","yes",18,"foe","1","2",1.5,"male","yes",37,"friend",1.5,0
+"75","male","yes",21,"friend","2","1",7.7,"female","yes",33,"friend",3.85,3.85
+"76","female","yes",27,"friend","1","1",0.2,"female","yes",50,"foe",0,0.2
+"77","female","yes",23,"foe","2","1",3.2,"male","yes",30,"foe",0,0
+"78","female","yes",47,"friend","3","1",3.7,"male","yes",41,"friend",1.85,1.85
+"79","male","no",21,"foe","1","1",1.2,"female","no",20,"foe",0,0
+"80","female","no",28,"friend","3","1",5.2,"male","no",29,"friend",2.6,2.6
+"81","female","yes",27,"foe","2","1",2.7,"female","yes",43,"friend",2.7,0
+"82","male","yes",23,"friend","3","1",6.2,"male","yes",33,"friend",3.1,3.1
+"83","female","yes",19,"foe","1","1",0.2,"male","yes",39,"friend",0.2,0
+"84","female","yes",32,"foe","2","1",2.7,"female","yes",25,"foe",0,0
+"85","male","yes",30,"friend","1","1",0.7,"male","yes",28,"foe",0,0.7
+"86","female","yes",39,"friend","3","1",7.7,"male","yes",30,"friend",3.85,3.85
+"87","female","yes",22,"foe","2","1",3.7,"female","yes",33,"friend",3.7,0
+"88","male","yes",20,"foe","2","1",5.7,"male","yes",41,"friend",5.7,0
+"89","female","yes",41,"friend","1","1",0.2,"female","yes",35,"friend",0.1,0.1
+"90","male","yes",25,"foe","3","1",7.7,"male","yes",28,"friend",7.7,0
+"91","female","yes",20,"foe","1","1",1.2,"female","yes",27,"foe",0,0
+"92","male","yes",42,"friend","3","1",4.7,"female","yes",20,"foe",0,4.7
+"93","female","yes",29,"friend","2","1",2.2,"male","yes",40,"friend",1.1,1.1
+"94","male","yes",29,"foe","1","1",1.2,"female","yes",43,"foe",0,0
+"95","female","no",21,"friend","3","1",7.7,"male","no",25,"friend",3.85,3.85
+"96","female","yes",18,"foe","2","2",2.5,"male","yes",23,"foe",0,0
+"97","male","no",23,"friend","2","2",3.5,"female","no",23,"foe",0,3.5
+"98","female","yes",31,"friend","1","2",1,"male","yes",50,"friend",0.5,0.5
+"99","female","yes",30,"friend","3","2",4,"male","yes",20,"friend",2,2
+"100","female","yes",20,"friend","3","2",9,"female","yes",24,"foe",0,9
+"101","male","yes",20,"foe","1","2",0.5,"male","yes",41,"foe",0,0
+"102","male","no",31,"foe","1","2",0.5,"female","no",18,"foe",0,0
+"103","female","yes",27,"foe","2","2",3.5,"male","yes",23,"friend",3.5,0
+"104","male","yes",34,"friend","3","2",6,"female","yes",21,"foe",0,6
+"105","female","yes",51,"friend","1","2",0.2,"male","yes",22,"foe",0,0.2
+"106","female","yes",28,"friend","2","2",4,"female","yes",20,"friend",2,2
+"107","male","no",34,"friend","3","2",8,"male","no",20,"foe",0,8
+"108","male","yes",29,"foe","1","2",1,"male","yes",34,"friend",1,0
+"109","male","no",29,"foe","3","2",5,"female","no",26,"foe",0,0
+"110","female","yes",26,"friend","1","2",0.2,"male","yes",27,"foe",0,0.2
+"111","male","yes",35,"foe","2","2",0.5,"female","yes",19,"foe",0,0
+"112","male","no",29,"foe","2","2",2.5,"male","no",19,"friend",2.5,0
+"113","female","yes",32,"friend","3","2",6,"female","yes",20,"friend",3,3
+"114","female","yes",29,"foe","1","2",0.5,"female","yes",31,"friend",0.5,0
+"115","male","yes",23,"foe","3","2",7.5,"male","yes",26,"friend",7.5,0
+"116","male","yes",25,"foe","2","2",2,"female","yes",44,"friend",2,0
+"117","female","yes",42,"friend","1","2",0.5,"female","yes",19,"foe",0,0.5
+"118","male","yes",24,"friend","2","2",3.5,"male","yes",29,"foe",0,3.5
+"119","female","yes",24,"foe","3","2",6,"female","yes",29,"foe",0,0
+"120","male","yes",32,"friend","1","2",3,"female","yes",22,"foe",0,3
+"121","female","yes",31,"foe","3","2",7.5,"male","yes",25,"friend",7.5,0
+"122","male","no",36,"friend","1","2",0.5,"female","no",36,"friend",0.25,0.25
+"123","female","yes",35,"friend","2","2",3,"female","yes",21,"friend",1.5,1.5
+"124","male","yes",33,"foe","3","2",4,"male","yes",21,"foe",0,0
+"125","female","no",24,"friend","1","2",0.2,"male","no",20,"foe",0,0.2
+"126","male","no",31,"friend","2","2",0.5,"female","no",19,"foe",0,0.5
+"127","female","yes",20,"foe","2","2",3.5,"male","yes",42,"friend",3.5,0
+"128","male","yes",25,"friend","3","2",8,"female","yes",23,"friend",4,4
+"129","male","no",28,"foe","1","2",0.5,"female","no",30,"foe",0,0
+"130","female","yes",24,"friend","3","2",3.5,"male","yes",26,"friend",1.75,1.75
+"131","male","yes",29,"friend","2","2",2,"female","yes",22,"foe",0,2
+"132","female","yes",30,"foe","1","2",0.5,"female","yes",22,"foe",0,0
+"133","male","yes",24,"friend","2","2",6.5,"male","yes",23,"foe",0,6.5
+"134","male","yes",42,"friend","1","2",3,"female","yes",27,"friend",1.5,1.5
+"135","female","yes",23,"foe","3","2",8,"male","yes",19,"foe",0,0
+"136","male","yes",27,"friend","2","2",2,"male","yes",38,"friend",1,1
+"137","female","no",40,"foe","1","2",0.5,"female","no",23,"foe",0,0
+"138","male","yes",44,"friend","3","2",7.5,"male","yes",22,"foe",0,7.5
+"139","female","yes",18,"foe","1","2",0.5,"female","yes",20,"friend",0.5,0
+"140","female","yes",18,"friend","2","2",2,"male","yes",30,"foe",0,2
+"141","male","yes",18,"foe","3","2",6,"female","yes",29,"foe",0,0
+"142","female","yes",26,"foe","3","2",3,"male","yes",29,"foe",0,0
+"143","male","yes",47,"foe","1","2",1,"female","yes",36,"foe",0,0
+"144","female","no",34,"foe","2","2",2,"male","no",23,"foe",0,0
+"145","female","yes",29,"friend","2","2",5.5,"female","yes",19,"friend",2.75,2.75
+"146","male","yes",43,"foe","1","2",0.5,"male","yes",26,"foe",0,0
+"147","male","yes",27,"foe","1","2",0.5,"female","yes",26,"foe",0,0
+"148","female","yes",23,"friend","2","2",6,"male","yes",25,"foe",0,6
+"149","male","yes",20,"friend","1","2",3.5,"female","yes",22,"friend",1.75,1.75
+"150","male","yes",39,"foe","3","2",9,"female","yes",33,"foe",0,0
+"151","female","yes",23,"friend","1","2",1,"male","yes",20,"friend",0.5,0.5
+"152","male","yes",31,"foe","2","2",4,"female","yes",29,"foe",0,0
+"153","female","yes",30,"friend","3","2",4.5,"male","yes",28,"foe",0,4.5
+"154","male","yes",25,"foe","2","2",1.5,"female","yes",40,"foe",0,0
+"155","female","yes",28,"friend","1","2",0.2,"male","yes",27,"foe",0,0.2
+"156","male","yes",21,"foe","3","2",4,"female","yes",19,"foe",0,0
+"157","female","yes",23,"friend","3","2",8.5,"male","yes",22,"friend",4.25,4.25
+"158","male","yes",25,"foe","1","2",1.5,"female","yes",27,"friend",1.5,0
+"159","male","yes",18,"friend","2","2",6,"female","yes",22,"foe",0,6
+"160","female","yes",26,"foe","3","2",2.5,"male","yes",22,"foe",0,0
+"161","male","yes",34,"friend","1","2",1.5,"female","yes",28,"foe",0,1.5
+"162","male","yes",23,"foe","1","2",1.5,"female","yes",20,"foe",0,0
+"163","female","yes",41,"friend","1","2",0.5,"male","yes",65,"foe",0,0.5
+"164","male","no",22,"foe","2","2",5,"female","no",27,"foe",0,0
+"165","male","no",27,"foe","3","2",5,"female","no",23,"foe",0,0
+"166","female","yes",22,"friend","3","2",1.5,"male","yes",30,"foe",0,1.5
+"167","male","yes",27,"foe","1","2",1,"female","yes",27,"friend",1,0
+"168","female","yes",31,"foe","1","2",1,"female","yes",26,"foe",0,0
+"169","male","no",21,"foe","3","2",7,"male","no",37,"foe",0,0
+"170","female","yes",43,"foe","1","2",0.5,"female","yes",22,"foe",0,0
+"171","male","yes",26,"friend","2","2",6,"female","yes",20,"friend",3,3
+"172","male","yes",36,"friend","1","2",0.5,"male","yes",24,"friend",0.25,0.25
+"173","female","yes",32,"foe","3","2",2,"female","yes",29,"friend",2,0
+"174","male","yes",21,"friend","2","2",0.5,"female","yes",21,"friend",0.25,0.25
+"175","male","yes",22,"foe","3","2",6,"male","yes",29,"foe",0,0
+"176","female","yes",24,"friend","1","2",1.5,"female","yes",19,"foe",0,1.5
+"177","male","yes",23,"foe","1","2",1.5,"female","yes",25,"friend",1.5,0
+"178","male","yes",32,"friend","1","2",0.5,"male","yes",33,"friend",0.25,0.25
+"179","female","no",39,"foe","3","2",5,"female","no",24,"foe",0,0
+"180","female","yes",41,"friend","2","2",3,"female","yes",32,"friend",1.5,1.5
+"181","male","yes",28,"foe","3","2",5.5,"male","yes",23,"friend",5.5,0
+"182","female","yes",24,"foe","1","2",0.2,"male","yes",22,"foe",0,0
+"183","female","yes",25,"friend","1","2",0.2,"male","yes",23,"friend",0.1,0.1
+"184","female","no",29,"foe","3","2",6.5,"female","no",28,"foe",0,0
+"185","male","yes",30,"friend","1","2",2,"male","yes",22,"foe",0,2
+"186","female","yes",32,"friend","1","2",2,"male","yes",35,"friend",1,1
+"187","female","yes",51,"friend","1","2",0.5,"female","yes",29,"friend",0.25,0.25
+"188","male","yes",19,"friend","3","2",3,"male","yes",30,"friend",1.5,1.5
+"189","male","yes",22,"friend","1","2",0.5,"male","yes",22,"foe",0,0.5
+"190","female","no",32,"foe","1","2",0.5,"female","no",24,"friend",0.5,0
+"191","female","yes",28,"foe","3","2",4,"male","yes",30,"foe",0,0
+"192","female","yes",40,"friend","2","2",1.5,"female","yes",27,"foe",0,1.5
+"193","male","no",27,"foe","2","2",5,"male","no",27,"foe",0,0
+"194","male","yes",32,"friend","1","2",0.5,"female","yes",32,"foe",0,0.5
+"195","female","yes",24,"foe","3","2",15,"female","yes",27,"friend",15,0
+"196","male","yes",31,"friend","1","2",0.2,"male","yes",31,"foe",0,0.2
+"197","male","yes",23,"foe","2","2",1.5,"female","yes",23,"foe",0,0
+"198","female","yes",33,"foe","3","2",8.5,"male","yes",28,"foe",0,0
+"199","male","no",29,"friend","3","2",3.5,"male","no",26,"foe",0,3.5
+"200","female","yes",25,"friend","1","2",1,"female","yes",25,"friend",0.5,0.5
+"201","male","yes",36,"foe","1","2",1,"female","yes",32,"foe",0,0
+"202","male","yes",19,"foe","3","2",6,"male","yes",19,"friend",6,0
+"203","female","yes",24,"foe","1","2",2,"female","yes",29,"foe",0,0
+"204","female","yes",22,"foe","1","2",2,"male","yes",26,"foe",0,0
+"205","male","yes",33,"friend","1","2",0.2,"female","yes",23,"friend",0.1,0.1
+"206","female","yes",23,"friend","2","2",2.5,"male","yes",40,"foe",0,2.5
+"207","female","yes",20,"foe","1","2",0.5,"male","yes",23,"foe",0,0
+"208","male","yes",49,"foe","3","2",8,"female","yes",31,"foe",0,0
+"209","female","yes",24,"friend","1","2",1,"male","yes",19,"foe",0,1
+"210","female","no",25,"foe","2","2",2,"male","no",40,"friend",2,0
+"211","male","yes",26,"foe","3","2",6,"male","yes",26,"friend",6,0
+"212","female","yes",25,"friend","1","2",0.2,"female","yes",29,"friend",0.1,0.1
+"213","female","yes",46,"friend","2","2",0.5,"male","yes",29,"foe",0,0.5
+"214","female","yes",29,"foe","3","2",2.5,"female","yes",24,"friend",2.5,0
+"215","male","yes",39,"foe","3","2",6.5,"male","yes",20,"foe",0,0
+"216","male","yes",28,"friend","1","2",2,"female","yes",26,"foe",0,2
+"217","female","yes",32,"foe","2","2",5.5,"female","yes",27,"foe",0,0
+"218","male","yes",34,"foe","1","2",1,"female","yes",34,"foe",0,0
+"219","female","yes",36,"friend","3","2",6.5,"male","yes",23,"friend",3.25,3.25
+"220","male","no",37,"foe","2","2",3.5,"female","no",49,"foe",0,0
+"221","female","yes",32,"foe","2","2",1,"male","yes",19,"foe",0,0
+"222","female","yes",22,"friend","1","2",0.2,"female","yes",21,"friend",0.1,0.1
+"223","male","yes",25,"friend","3","2",2.5,"male","yes",28,"foe",0,2.5
+"224","male","no",25,"foe","2","2",4,"female","no",24,"foe",0,0
+"225","male","yes",43,"friend","1","2",1.5,"female","yes",26,"foe",0,1.5
+"226","male","yes",26,"foe","3","2",5,"male","yes",37,"foe",0,0
+"227","female","yes",34,"foe","1","2",1,"female","yes",31,"foe",0,0

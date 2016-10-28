@@ -31,11 +31,11 @@ for line in response.text.split("\n"):
         csvname = line[start+6:end+4]
         csvs.append(csvname)
 
-for csvFile in csvs:
+for csvname in csvs:
 
     response = load(base_url + csvname)
 
-    filename = os.path.join(base_directory, csvFile)
+    filename = os.path.join(base_directory, csvname)
     directory = os.path.dirname(filename)
 
     try: 
@@ -47,7 +47,7 @@ for csvFile in csvs:
     file = open(filename, "w")
     print "[Info]", "Writing to:", filename
 
-    file.write(response.text)
+    file.write(response.text.encode('utf-8'))
     file.close()
    
 ##################### TIME #######################

@@ -7,14 +7,18 @@ start_time = time.time()
 
 import os
 import csv
+import requests
 
 import plotly.plotly as py
 from plotly.graph_objs import *
 from plotly.grid_objs import Column, Grid
 
+from crawly import *
+
 #################### CONFIG ######################
 
 base_directory = r"Downloads"
+
 
 ################## FUNCTIONS #####################
 
@@ -43,7 +47,7 @@ def extract_column_data(filename, column_names):
         # opens csv as a dictreader object and assigns it to variable reader
         column = []
 
-        reader = csv.DictReader(open(filename))
+        reader = csv.DictReader(open(filename, 'rU'))
         for row in reader:
             column.append(row[column_name].strip())
 
@@ -54,16 +58,34 @@ def extract_column_data(filename, column_names):
 
 def get_title(filename):
 
-    if filename.endswith(".csv") or filename.endswith(".tsv"):
+    if filename.endswith(".csv"):
         filename = filename[:-4]
-        return filename.replace("-", " ").title()
-
-    else:
-        return filename.replace("-", " ").title()
+    
+    filename = filename.replace("Downloads/", "").replace("_", " ").replace("-", " ").replace(".", " ")
+    return filename.title()
 
 
 # makes the Plotly Grid object with the columns and the title
-def make_grid(columns, filename):
+def make_grid(columns, column_names, filename):
+
+    # check for duplicates in list as Plotly doesnt support columns with same name
+    dups = {}
+
+    for i, val in enumerate(column_names):
+        if val not in dups:
+            # Store index of first occurrence and occurrence value
+            dups[val] = [i, 1]
+        else:
+            # Special case for first occurrence
+            if dups[val][1] == 1:
+                column_names[dups[val][0]] += str(dups[val][1])
+
+            # Increment occurrence value, index value doesn't matter anymore
+            dups[val][1] += 1
+
+            # Use stored occurrence value
+            column_names[i] += str(dups[val][1])
+
 
     # list comprehension to create a list of Column objects used to make Grid
     # get_title gets the capitalized title for csv file    
@@ -77,22 +99,27 @@ def make_grid(columns, filename):
 ##################### MAIN #######################
 
 
+
 list_of_filenames = get_filenames(base_directory)
-for filename in list_of_filenames:
-    print filename
-quit()
 
 for filename in list_of_filenames:
 
+    # print filename
     # open the csv first to get the column_names to use csv as dictreader
-    file = open(filename)
+    file = open(filename, 'rU')
 
     column_names = csv.reader(file).next()
     column_names = [column_name.strip() for column_name in column_names]
     columns = extract_column_data(filename, column_names)    
+    
+    grid, title = make_grid(columns, column_names, filename)
+    print title
 
-    grid, title = make_grid(columns, filename)
-    grid_url = py.grid_ops.upload(grid, title, world_readable=True, auto_open=False)
+    #grid_url = load('https://api.plot.ly/v2/files/lookup', {'user': 'datasets', 'path': title}).json()["web_url"]
+    #print grid_url
+    #py.grid_ops.delete(grid_url=grid_url)
+
+    grid_url = py.grid_ops.upload(grid, filename=title, world_readable=True, auto_open=True)
 
 
 ##################### TIME #######################
