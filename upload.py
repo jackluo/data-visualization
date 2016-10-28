@@ -16,7 +16,7 @@ from plotly.grid_objs import Column, Grid
 #################### CONFIG ######################
 
 base_directory = r"Downloads"
-
+# ADD PRIVATE API KEY HERE TO CHANGE ACCOUNT
 
 ################## FUNCTIONS #####################
 
@@ -95,7 +95,6 @@ def make_grid(columns, column_names, filename):
 
 
 ##################### MAIN #######################
-
 
 
 list_of_filenames = get_filenames(base_directory)
