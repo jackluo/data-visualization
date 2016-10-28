@@ -13,8 +13,6 @@ import plotly.plotly as py
 from plotly.graph_objs import *
 from plotly.grid_objs import Column, Grid
 
-from crawly import *
-
 #################### CONFIG ######################
 
 base_directory = r"Downloads"
@@ -104,18 +102,18 @@ list_of_filenames = get_filenames(base_directory)
 
 for filename in list_of_filenames:
 
-    # print filename
     # open the csv first to get the column_names to use csv as dictreader
     file = open(filename, 'rU')
 
     column_names = csv.reader(file).next()
     column_names = [column_name.strip() for column_name in column_names]
+
     columns = extract_column_data(filename, column_names)    
     
     grid, title = make_grid(columns, column_names, filename)
     print title
 
-    #grid_url = load('https://api.plot.ly/v2/files/lookup', {'user': 'datasets', 'path': title}).json()["web_url"]
+    #grid_url = requests.get('https://api.plot.ly/v2/files/lookup', params={'user': 'datasets', 'path': title}).json()["web_url"]
     #print grid_url
     #py.grid_ops.delete(grid_url=grid_url)
 
