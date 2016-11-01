@@ -73,7 +73,7 @@ def make_folder(directory):
 
     nested_dict = lambda: collections.defaultdict(nested_dict)
     folder_payload = nested_dict()
-
+    
     folder_payload["path"] = get_title(directory).replace("\\", '/')
     return folder_payload
 
