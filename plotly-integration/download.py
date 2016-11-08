@@ -8,14 +8,27 @@ start_time = time.time()
 import requests
 import os
 
-from crawly import *
-
 #################### CONFIG ######################
 
 base_url = r"https://vincentarelbundock.github.io/Rdatasets/"
 base_directory = r"Downloads/R Datasets/"
 
+################### FUNCTIONS ####################
+
+
+def load(url, params = None, headers = {}):
+
+    if not headers: 
+        headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'}
+    if headers == -1:
+        headers = None
+    
+    response = requests.get(url, params = params, headers = headers)
+    return response
+
+
 ##################### MAIN #######################
+
 
 response = load(base_url + "datasets.html")
 
@@ -50,6 +63,7 @@ for csvname in csvs:
     file.write(response.text.encode('utf-8'))
     file.close()
    
+
 ##################### TIME #######################
 
 print "Done!"

@@ -15,7 +15,6 @@ from requests.auth import HTTPBasicAuth
 #################### CONFIG ######################
 
 base_directory = r"Downloads"
-#base_directory = r"Test"
 auth = HTTPBasicAuth('datasets', 'w581yrzokp')
 headers = {'Plotly-Client-Platform': 'python'}
 
@@ -64,8 +63,9 @@ def get_title(filename):
     if filename.startswith(base_directory):
         filename = filename[len(base_directory):]
 
-    filename = filename.replace("-", " ").replace(".", " ")
-    return filename.title()
+    filename = filename.title().
+    filename = filename.replace(" ", "-").replace(".", "-").replace("_", "-")
+    return filename
 
 
 # makes the folder payload to create a folder
@@ -74,7 +74,7 @@ def make_folder(directory):
     nested_dict = lambda: collections.defaultdict(nested_dict)
     folder_payload = nested_dict()
     
-    folder_payload["path"] = get_title(directory).replace("\\", '/')
+    folder_payload["path"] = get_title(directory).replace("\\", "/")
     return folder_payload
 
 
@@ -124,14 +124,14 @@ def create_folders(folders):
     print "Created folder" , folder_payload
     folder_response = requests.post('https://api.plot.ly/v2/folders', auth=auth, headers=headers, json=folder_payload)
 
-    print "Response :", folder_response.text
+    print "Response:", folder_response.text
     
 
 def upload_files(filenames):
     for filename in filenames:
         try:
             file = open(filename, 'rU')
-            print "Uplaod " , filename
+            print "Uploading" , filename
             # opens once to get the column names
             column_names = csv.reader(file).next()
             file.close()
@@ -143,13 +143,12 @@ def upload_files(filenames):
             folder_payload = make_folder(root)
             payload = make_payload(columns, column_names, rootless_filename, folder_payload)
             response = requests.post('https://api.plot.ly/v2/grids', auth=auth, headers=headers, json=payload)
-            print "GRID", response.text
+            print "Grid:", response.text
         except:
-           print "Fail upload " , filename
+           print "Fail upload" , filename
   
         
 ##################### MAIN #######################
-
 
 filenames, folders = get_filenames(base_directory)
 
