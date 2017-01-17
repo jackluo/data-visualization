@@ -50,7 +50,7 @@ def extract_column_data(filename, column_names):
             column.append(row[column_name].strip())
 
         columns.append(column)
-    
+
     return columns
 
 
@@ -59,7 +59,7 @@ def get_title(filename):
 
     if filename.endswith(".csv"):
         filename = filename[:-4]
-    
+
     if filename.startswith(base_directory):
         filename = filename[len(base_directory):]
 
@@ -73,7 +73,7 @@ def make_folder(directory):
 
     nested_dict = lambda: collections.defaultdict(nested_dict)
     folder_payload = nested_dict()
-    
+
     folder_payload["path"] = get_title(directory).replace("\\", "/")
     return folder_payload
 
@@ -107,7 +107,7 @@ def make_payload(columns, column_names, filename, folder_payload):
     payload["title"] = get_title(filename)
     payload["world_readable"] = True
     payload["parent_path"] = folder_payload["path"]
- 
+
     for i, column in enumerate(columns):
         key =column_names[i]
         if key=='':
@@ -121,33 +121,33 @@ def make_payload(columns, column_names, filename, folder_payload):
 def create_folders(folders):
   for folder in folders:
     folder_payload = make_folder(folder)
-    print "Created folder" , folder_payload
+    print("Created folder" , folder_payload)
     folder_response = requests.post('https://api.plot.ly/v2/folders', auth=auth, headers=headers, json=folder_payload)
 
-    print "Response:", folder_response.text
-    
+    print("Response:", folder_response.text)
+
 
 def upload_files(filenames):
     for filename in filenames:
         try:
             file = open(filename, 'rU')
-            print "Uploading" , filename
+            print("Uploading" , filename)
             # opens once to get the column names
             column_names = csv.reader(file).next()
             file.close()
             column_names = [column_name.strip() for column_name in column_names]
-            #print filename, column_names
-            columns = extract_column_data(filename, column_names)    
-    
+            #print(filename, column_names)
+            columns = extract_column_data(filename, column_names)
+
             root, rootless_filename = os.path.split(filename)
             folder_payload = make_folder(root)
             payload = make_payload(columns, column_names, rootless_filename, folder_payload)
             response = requests.post('https://api.plot.ly/v2/grids', auth=auth, headers=headers, json=payload)
-            print "Grid:", response.text
+            print("Grid:", response.text)
         except:
-           print "Fail upload" , filename
-  
-        
+           print("Fail upload" , filename)
+
+
 ##################### MAIN #######################
 
 filenames, folders = get_filenames(base_directory)
@@ -156,11 +156,5 @@ create_folders(folders)
 upload_files(filenames)
 
 ##################### TIME #######################
-print "Done!"
-print "%s seconds" % (time.time() - start_time)
-
-
- 
-
-
- 
+print("Done!")
+print("%s seconds" % (time.time() - start_time))

@@ -58,7 +58,7 @@ for csvname in csvs:
             raise
 
     file = open(filename, "w")
-    print "[Info]", "Writing to:", filename
+    print("[Info]", "Writing to:", filename)
 
     file.write(response.text.encode('utf-8'))
     file.close()
@@ -66,5 +66,5 @@ for csvname in csvs:
 
 ##################### TIME #######################
 
-print "Done!"
-print "%s seconds" % (time.time() - start_time)
+print("Done!")
+print("%s seconds" % (time.time() - start_time))
