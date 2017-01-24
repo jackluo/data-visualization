@@ -15,13 +15,14 @@ mapbox_access_token = 'pk.eyJ1IjoiamFja2x1byIsImEiOiJjaXhzYTB0bHcwOHNoMnFtOWZ3YW
 # In[]:
 # Selects data
 
-filename = "data/mean-years-of-schooling-selected-countries.csv"
-chart_filename = "Education " + str(datetime.now())
+filename = "data/primary-enrollment-selected-countries.csv"
+chart_filename = "Education 3 " + str(datetime.now())
 
-df = pd.read_csv(filename, encoding="utf-8-sig")
+df = pd.read_csv(filename, encoding="iso-8859-1")
+df.columns[2] # Hard to read special characters, just copy paste
 
 # Pivots Table (Very important!)
-df = df.pivot(index="Year", columns="Country", values="Total_YearsSchool – Lee-Lee (2016)")
+df = df.pivot(index="Year", columns="Country", values="Pri_adj_Enroll_% \x8a\x97\x96 Lee-Lee (2016)")
 #df = df.pivot(index="Year", columns="Country", values="Barro Lee Education Dataset: Educational Attainment (average years of total education)")
 #df
 
@@ -73,7 +74,7 @@ trace1 = Choropleth(
 
     # COLORSCALE
     zmin = 0,
-    zmax = 14,
+    zmax = 100,
     autocolorscale = False,
     colorscale = yellowblue,
     showscale = True,
@@ -215,7 +216,7 @@ updatemenus = dict(
 
 layout = dict(
 
-    title = "Mean years of schooling, 1870-2010",
+    title = "Primary school enrollment, 1820-2010",
 
     # GENERAL LAYOUT
     width = 1080,

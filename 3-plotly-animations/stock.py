@@ -54,14 +54,14 @@ else:
 # In[]:
 # Uploads Grid
 
-my_columns = []
+columns = []
 
 for i in range(len(df.index)):
-    my_columns.append(Column(df.index[:i + 1], "x{}".format(i + 1)))
-    my_columns.append(Column(price[:i + 1], "y{}".format(i + 1)))
+    columns.append(Column(df.index[:i + 1], "x{}".format(i + 1)))
+    columns.append(Column(price[:i + 1], "y{}".format(i + 1)))
 
 # Will throw error if file exists or path is not root
-grid = Grid(my_columns)
+grid = Grid(columns)
 py.grid_ops.upload(grid, grid_filename, auto_open=False)
 
 

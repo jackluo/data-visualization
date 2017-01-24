@@ -16,7 +16,7 @@ mapbox_access_token = 'pk.eyJ1IjoiamFja2x1byIsImEiOiJjaXhzYTB0bHcwOHNoMnFtOWZ3YW
 # Selects data
 
 filename = "data/mean-years-of-schooling-selected-countries.csv"
-chart_filename = "Education " + str(datetime.now())
+chart_filename = "Education 2 " + str(datetime.now())
 
 df = pd.read_csv(filename, encoding="utf-8-sig")
 
