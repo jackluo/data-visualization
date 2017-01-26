@@ -102,7 +102,7 @@ class DoublePendulum(object):
 # Sets up pendulum
 
 pendulum = DoublePendulum([180., 0.0, -20., 0.0])
-dt = 1./30 # 30 fps
+dt = 1./60 # 60 fps
 
 
 # In[]:
@@ -113,7 +113,7 @@ grid_filename = chart_filename + " Grid"
 columns = []
 
 # Actual animation function
-for i in range(500):
+for i in range(1000):
 
     pendulum.step(dt)
     x, y = pendulum.position()
@@ -140,8 +140,7 @@ trace1 = Scatter(
 # In[]:
 # Creates layout
 
-animation_time = 20
-transition_time = 10
+animation_time = 15
 
 updatemenus = dict(
     type = "buttons",
@@ -150,11 +149,7 @@ updatemenus = dict(
             method = "animate",
             label = "Play",
             args = [None,
-                    dict(
-                        frame = dict(duration = animation_time, redraw = False),
-                        transition = dict(duration = transition_time, easing = "quadratic-in-out"),
-                        mode = "immediate"
-                    ),
+                    dict(frame = dict(duration = animation_time, redraw = False), mode = "immediate", fromcurrent = True),
             ],
         ),
         dict(
@@ -168,11 +163,10 @@ updatemenus = dict(
 )
 
 layout = dict(
-    width = 720,
-    height = 720,
+    width = 720, height = 720,
     xaxis = dict(range = [-2, 2]),
     yaxis = dict(range = [-2, 2]),
-    hovermode = closest,
+    hovermode = "closest",
     updatemenus = [updatemenus],
 )
 
@@ -182,7 +176,7 @@ layout = dict(
 
 frames = []
 
-for i in range(500):
+for i in range(1000):
     frame = dict(
         data = [dict(xsrc = grid.get_column_reference("x{}".format(i+1)),
                      ysrc = grid.get_column_reference("y{}".format(i+1))

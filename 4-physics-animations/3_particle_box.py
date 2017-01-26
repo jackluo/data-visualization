@@ -111,7 +111,7 @@ init_state = -0.5 + np.random.random((50, 4))
 init_state[:, :2] *= 3.9
 
 box = ParticleBox(init_state, size=0.04)
-dt = 1. / 30 # 30fps
+dt = 1. / 60 # 60fps
 
 
 # In[]:
@@ -122,7 +122,7 @@ grid_filename = chart_filename + " Grid"
 columns = []
 
 # Actual animation function
-for i in range(600):
+for i in range(1200):
 
     box.step(dt)
     x, y = box.state[:, 0], box.state[:, 1]
@@ -149,8 +149,7 @@ trace1 = Scatter(
 # In[]:
 # Creates layout
 
-animation_time = 10
-transition_time = 10
+animation_time = 15
 
 updatemenus = dict(
     type = "buttons",
@@ -159,11 +158,7 @@ updatemenus = dict(
             method = "animate",
             label = "Play",
             args = [None,
-                    dict(
-                        frame = dict(duration = animation_time, redraw = False),
-                        transition = dict(duration = transition_time, easing = "quadratic-in-out"),
-                        mode = "immediate"
-                    ),
+                    dict(frame = dict(duration = animation_time, redraw = False), mode = "immediate", fromcurrent = True),
             ],
         ),
         dict(
@@ -176,11 +171,22 @@ updatemenus = dict(
     ],
 )
 
+shapes = dict(
+    opacity = 1,
+    layer = "below",
+    xref = "x",
+    yref = "y",
+    y0 = -2, y1 = 2,
+    x0 = -2, x1 = 2,
+    type = "rectangle",
+    line = dict(color = "#00000", width = 1),
+)
+
 layout = dict(
-    width = 720,
-    height = 720,
-    xaxis = dict(range = [-3.2, 3.2]),
-    yaxis = dict(range = [-2.4, 2.4]),
+    width = 720, height = 720,
+    xaxis = dict(range = [-2.4, 2.4], showline = False, showgrid = False, zeroline = False, showticklabels = False),
+    yaxis = dict(range = [-2.4, 2.4], showline = False, showgrid = False, zeroline = False, showticklabels = False),
+    shapes = [shapes],
     updatemenus = [updatemenus],
 )
 
@@ -190,7 +196,7 @@ layout = dict(
 
 frames = []
 
-for i in range(600):
+for i in range(1200):
     frame = dict(
         data = [dict(xsrc = grid.get_column_reference("x{}".format(i+1)),
                      ysrc = grid.get_column_reference("y{}".format(i+1))

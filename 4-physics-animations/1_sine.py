@@ -13,7 +13,7 @@ from plotly.grid_objs import Grid, Column
 # Sine function
 # https://jakevdp.github.io/blog/2012/08/18/matplotlib-animation-tutorial/
 
-def sine(i):
+def sin(i):
     x = np.linspace(0, 2, 100)
     y = np.sin(2 * np.pi * (x - 0.01 * i))
     return x, y
@@ -29,7 +29,7 @@ columns = []
 # Actual animation function
 for i in range(200):
 
-    x, y = sine(i)
+    x, y = sin(i)
 
     columns.append(Column(x, "x{}".format(i + 1)))
     columns.append(Column(y, "y{}".format(i + 1)))
@@ -51,7 +51,7 @@ trace1 = Scatter(
 # In[]:
 # Creates layout
 
-animation_time = 10
+animation_time = 15
 
 updatemenus = dict(
     type = "buttons",
@@ -60,7 +60,7 @@ updatemenus = dict(
                 method = "animate",
                 label = "Play",
                 args = [None,
-                        dict(frame = dict(duration = animation_time, redraw = False), mode = "immediate"),
+                        dict(frame = dict(duration = animation_time, redraw = False), mode = "immediate", fromcurrent = True),
                         ],
                 ),
             dict(
