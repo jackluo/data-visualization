@@ -1,5 +1,5 @@
 # In[]:
-# Imports required libraries
+# Import required libraries
 
 from datetime import datetime
 import numpy as np
@@ -13,7 +13,7 @@ mapbox_access_token = 'pk.eyJ1IjoiamFja2x1byIsImEiOiJjaXhzYTB0bHcwOHNoMnFtOWZ3YW
 
 
 # In[]:
-# Selects data
+# Select data
 
 filename = "data/walmart_store_openings.csv"
 chart_filename = "Walmart simple " + str(datetime.now())
@@ -22,7 +22,7 @@ df = pd.read_csv(filename, encoding="utf-8-sig")
 #df
 #print(df.columns)
 
-# Gets list of years
+# Get list of years
 years = df["YEAR"].unique()
 years = list(sorted(years.astype(str)))
 
@@ -31,7 +31,7 @@ years = list(sorted(years.astype(str)))
 
 
 # In[]:
-# Uploads Grid
+# Upload Grid
 
 grid_filename = chart_filename + " Grid"
 columns = []
@@ -52,7 +52,7 @@ py.grid_ops.upload(grid, grid_filename, auto_open=False)
 
 
 # In[]:
-# Creates data
+# Create data
 
 trace1 = Scattermapbox(
 
@@ -73,7 +73,7 @@ trace1 = Scattermapbox(
 
 
 # In[]:
-# Sets up slider and buttons
+# Set up slider and buttons
 
 slider = dict(
 
@@ -194,7 +194,7 @@ updatemenus = dict(
 
 
 # In[]:
-# Creates layout
+# Create layout
 
 layout = dict(
 
@@ -243,7 +243,7 @@ layout = dict(
 
 
 # In[]:
-# Creates frames
+# Create frames
 
 frames = []
 
@@ -259,7 +259,7 @@ for i, year in enumerate(years):
 
 
 # In[]:
-# Uploads animation
+# Upload animation
 
 data = [trace1]
 figure = dict(data=data, layout=layout, frames=frames)

@@ -1,5 +1,5 @@
 # In[]:
-# Imports required libraries
+# Import required libraries
 
 from datetime import datetime
 import numpy as np
@@ -13,7 +13,7 @@ mapbox_access_token = 'pk.eyJ1IjoiamFja2x1byIsImEiOiJjaXhzYTB0bHcwOHNoMnFtOWZ3YW
 
 
 # In[]:
-# Selects data
+# Select data
 
 filename = "data/primary-enrollment-selected-countries.csv"
 chart_filename = "Education 3 " + str(datetime.now())
@@ -32,7 +32,7 @@ years = list(sorted(years.astype(str)))
 
 
 # In[]:
-# Uploads Grid
+# Upload Grid
 
 grid_filename = chart_filename + " Grid"
 columns = []
@@ -58,7 +58,7 @@ py.grid_ops.upload(grid, grid_filename, auto_open=False)
 
 
 # In[]:
-# Creates data
+# Create data
 
 yellowblue = [[0, "rgb(255,255,204)"], [0.35, "rgb(161,218,180)"], [0.5, "rgb(65,182,196)"],
             [0.6, "rgb(44,127,184)"], [0.7, "rgb(8,104,172)"], [1, "rgb(37,52,148)"]]
@@ -87,7 +87,7 @@ trace1 = Choropleth(
 
 
 # In[]:
-# Sets up slider and buttons
+# Set up slider and buttons
 
 animation_time = 500
 transition_time = 300
@@ -212,7 +212,7 @@ updatemenus = dict(
 
 
 # In[]:
-# Creates layout
+# Create layout
 
 layout = dict(
 
@@ -286,7 +286,7 @@ layout = dict(
 
 
 # In[]:
-# Creates frames
+# Create frames
 
 frames = []
 
@@ -308,7 +308,7 @@ for i, year in enumerate(years):
 
 
 # In[]:
-# Uploads animation
+# Upload animation
 
 data = [trace1]
 figure = dict(data=data, layout=layout, frames=frames)

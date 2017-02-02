@@ -1,5 +1,5 @@
 # In[]:
-# Imports required libraries
+# Import required libraries
 
 from datetime import datetime
 import numpy as np
@@ -20,7 +20,7 @@ def sin(i):
 
 
 # In[]:
-# Uploads Grid
+# Upload Grid
 
 chart_filename = "Sine " + str(datetime.now())
 grid_filename = chart_filename + " Grid"
@@ -39,7 +39,7 @@ py.grid_ops.upload(grid, grid_filename, auto_open=False)
 
 
 # In[]:
-# Creates data
+# Create data
 
 trace1 = Scatter(
     xsrc = grid.get_column_reference("x1"),
@@ -49,7 +49,7 @@ trace1 = Scatter(
 
 
 # In[]:
-# Creates layout
+# Create layout
 
 animation_time = 15
 
@@ -77,7 +77,7 @@ layout = dict(updatemenus = [updatemenus])
 
 
 # In[]:
-# Creates frames
+# Create frames
 
 frames = []
 
@@ -92,7 +92,7 @@ for i in range(200):
 
 
 # In[]:
-# Uploads animation
+# Upload animation
 
 figure = dict(data=[trace1], layout=layout, frames=frames)
 py.icreate_animations(figure, filename=chart_filename, auto_open=False)

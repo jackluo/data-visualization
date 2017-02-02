@@ -13,7 +13,7 @@ mapbox_access_token = 'pk.eyJ1IjoiamFja2x1byIsImEiOiJjaXhzYTB0bHcwOHNoMnFtOWZ3YW
 
 
 # In[]:
-# Selects data
+# Select data
 
 filename = "data/turbine_locations.csv"
 chart_filename = "Wind turbines full " + str(datetime.now())
@@ -31,11 +31,11 @@ df["blade_l"].replace(-99999, np.NaN, inplace=True)
 # Remove site name "unknowns" (partial match, need regex = True)
 df["site_name"].replace("unknown", "", regex=True)
 
-# Gets list of years
+# Get list of years
 years = df["on_year_s"].unique()
 years = list(sorted(years.astype(str)))
 
-# Groups by year and count number of turbines
+# Group by year and count number of turbines
 ylist = df.groupby("on_year_s").count()["unique_id"]
 ylist_cum = ylist.cumsum()
 
@@ -43,7 +43,7 @@ ylist_cum = ylist.cumsum()
 statecount = df.groupby("on_year_s")["state"].nunique()
 statecount = list(statecount.astype(str))
 
-# Gets max range for subplot (minimum set to 0, no y-axis jump)
+# Get max range for subplot (minimum set to 0, no y-axis jump)
 max_range = max(ylist) * 1.25
 max_range_cum = max(ylist_cum) * 1.25
 
@@ -53,13 +53,13 @@ max_range_blades = 60
 max_range_states = 500
 max_range_statecount = 40
 
-# Converts list items to string
+# Convert list items to string
 ylist = list(ylist.astype(str))
 ylist_cum = list(ylist_cum.astype(str))
 
 
 # In[]:
-# Uploads all 2 Grids
+# Upload all 2 Grids
 
 # Since Grid has a size limit, it is good practice to upload multiple Grids for suplots in case of large datasets
 grid_filename = chart_filename + " Grid"
@@ -92,7 +92,7 @@ for i, year in enumerate(years):
     texts = list(current_year["site_name"].astype(str))
     sizes = list(current_year["blade_l"].astype(float))
 
-    # Iteratively grows list to create running counts
+    # Iteratively grow list to create running counts
     xvalues = years[:i + 1]
     yvalues = ylist[:i + 1]
     yvalues_cum = ylist_cum[:i + 1]
@@ -127,7 +127,7 @@ py.grid_ops.upload(grid2, grid_filename2, auto_open=False)
 
 
 # In[]:
-# Creates data
+# Create data
 
 viridis = [[0, "rgb(221,42,145)"], [0.3, "rgb(177,77,236)"], [0.4, "rgb(118,117,237)"],
             [0.65, "rgb(46,142,191)"], [0.8, "rgb(11,152,121)"], [1, "rgb(19,152,99)"]]
@@ -267,7 +267,7 @@ trace6 = Choropleth(
 
 
 # In[]:
-# Sets up slider and buttons
+# Set up slider and buttons
 
 animation_time = 1000
 transition_time = 300
@@ -392,7 +392,7 @@ updatemenus = dict(
 
 
 # In[]:
-# Creates layout
+# Create layout
 
 layout = dict(
 
@@ -544,7 +544,7 @@ layout = dict(
 
 
 # In[]:
-# Creates frames
+# Create frames
 
 frames = []
 
@@ -597,7 +597,7 @@ for i, year in enumerate(years):
 
 
 # In[]:
-# Uploads animation
+# Upload animation
 
 data = [trace1, trace2, trace3, trace4, trace5, trace6]
 figure = dict(data=data, layout=layout, frames=frames)

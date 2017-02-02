@@ -1,5 +1,5 @@
 # In[]:
-# Imports required libraries
+# Import required libraries
 
 from datetime import datetime
 import numpy as np
@@ -13,7 +13,7 @@ mapbox_access_token = 'pk.eyJ1IjoiamFja2x1byIsImEiOiJjaXhzYTB0bHcwOHNoMnFtOWZ3YW
 
 
 # In[]:
-# Selects data
+# Select data
 
 filename = "data/walmart_store_openings.csv"
 chart_filename = "Walmart " + str(datetime.now())
@@ -43,7 +43,7 @@ ylist_cum = list(ylist_cum.astype(str))
 
 
 # In[]:
-# Uploads all 2 Grids
+# Upload all 2 Grids
 
 # Since Grid has a size limit, it is good practice to upload multiple Grids for suplots in case of large datasets
 grid_filename = chart_filename + " Grid"
@@ -84,7 +84,7 @@ py.grid_ops.upload(grid2, grid_filename2, auto_open=False)
 
 
 # In[]:
-# Creates data
+# Create data
 
 # Main trace
 trace1 = Scattermapbox(
@@ -148,7 +148,7 @@ trace3 = Scatter(
 
 
 # In[]:
-# Sets up slider and buttons
+# Set up slider and buttons
 
 slider = dict(
 
@@ -269,7 +269,7 @@ updatemenus = dict(
 
 
 # In[]:
-# Creates layout
+# Create layout
 
 layout = dict(
 
@@ -347,7 +347,7 @@ layout = dict(
 
 
 # In[]:
-# Creates frames
+# Create frames
 
 frames = []
 
@@ -398,7 +398,7 @@ for i, year in enumerate(years):
 
 
 # In[]:
-# Uploads animation
+# Upload animation
 
 data = [trace1, trace2, trace3]
 figure = dict(data=data, layout=layout, frames=frames)

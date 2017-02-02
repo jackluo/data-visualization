@@ -1,5 +1,5 @@
 # In[]:
-# Imports required libraries
+# Import required libraries
 
 from datetime import datetime
 import numpy as np
@@ -104,7 +104,7 @@ class ParticleBox(object):
 
 
 # In[]:
-# Sets up initial state
+# Set up initial state
 
 np.random.seed(0)
 init_state = -0.5 + np.random.random((50, 4))
@@ -115,7 +115,7 @@ dt = 1. / 60 # 60fps
 
 
 # In[]:
-# Uploads Grid and performs animation
+# Upload Grid and performs animation
 
 chart_filename = "Particles " + str(datetime.now())
 grid_filename = chart_filename + " Grid"
@@ -137,7 +137,7 @@ py.grid_ops.upload(grid, grid_filename, auto_open=False)
 
 
 # In[]:
-# Creates data
+# Create data
 
 trace1 = Scatter(
     xsrc = grid.get_column_reference("x1"),
@@ -147,7 +147,7 @@ trace1 = Scatter(
 
 
 # In[]:
-# Creates layout
+# Create layout
 
 animation_time = 15
 
@@ -192,7 +192,7 @@ layout = dict(
 
 
 # In[]:
-# Creates frames
+# Create frames
 
 frames = []
 
@@ -207,7 +207,7 @@ for i in range(1200):
 
 
 # In[]:
-# Uploads animation
+# Upload animation
 
 figure = dict(data=[trace1], layout=layout, frames=frames)
 py.icreate_animations(figure, filename=chart_filename, auto_open=False)
