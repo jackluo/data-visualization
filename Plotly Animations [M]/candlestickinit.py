@@ -1,24 +1,7 @@
-Skip to content
-This repository
-Search
-Pull requests
-Issues
-Gist
- @thejackluo
- Watch 1
-  Star 0
- Fork 0 zluo/py_lab
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Pulse  Graphs
-Branch: master Find file Copy pathpy_lab/stlib/module/data.py
-adc2c75  2 days ago
- zluo xx
-1 contributor
-RawBlameHistory
-128 lines (105 sloc)  4.88 KB
-'''
+
 Created on Jan 13, 2017
 @author: zluo
-'''
+
 from plotly.graph_objs import *
 from plotly.tools import FigureFactory as FF
 import pandas_datareader.data as web
@@ -141,5 +124,3 @@ class Data():
         end = self.df.index.searchsorted(now)
         self.plot_data = self.df[start:end]
         return
-Contact GitHub API Training Shop Blog About
-© 2017 GitHub, Inc. Terms Privacy Security Status Help

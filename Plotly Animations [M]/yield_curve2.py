@@ -153,5 +153,5 @@ layout = dict(
 )
 
 data = [trace1]
-fig = dict(data=data, layout=layout)
+fig = dict(data=data, layout=layout, validate=False)
 plot_url = py.plot(fig)
