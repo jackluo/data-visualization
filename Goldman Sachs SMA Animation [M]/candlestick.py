@@ -1,5 +1,5 @@
 # In[]:
-# Import required libraries
+# Imports required libraries
 
 import numpy as np
 import pandas as pd
@@ -10,7 +10,7 @@ from plotly.graph_objs import *
 
 
 # In[]:
-# Select ticker, SMA range, date range and other options
+# Selects ticker, SMA range, date range and other options
 
 ticker = "GS"
 sma_range = 200
@@ -26,7 +26,7 @@ df = web.get_data_yahoo(ticker, date_start, date_end)
 
 
 # In[]:
-# Create Candlestick
+# Creates Candlestick
 
 trace1 = Candlestick(
     x = df.index,
@@ -127,7 +127,7 @@ updatemenus["buttons"][1]["args"][1][4] = True
 updatemenus["buttons"][1]["args"][1][10] = True
 
 # In[]:
-# Create layout
+# Creates layout
 
 layout = dict(
 
