@@ -1,12 +1,8 @@
 # In[]:
 # Import required libraries
-# import pickle
+import cPickle
 import datetime as dt
-
-# import numpy as np
 import pandas as pd
-# import plotly.plotly as py
-# import plotly.offline as pyo
 
 import dash
 from dash.dependencies import Input, Output
@@ -14,22 +10,16 @@ import dash_core_components as core
 import dash_html_components as html
 
 # Multi-dropdown options
+# from layout import LAYOUT
 from controls import COUNTIES, WELL_STATUSES, WELL_TYPES
 
 
 # In[]:
-# Create controls
+# Create app
 app = dash.Dash("New York Oil and Gas")
-app.css.append_css(
-    {
-        'external_url': (
-            # http://tiny.cc/dashcss
-            'https://rawgit.com/chriddyp/0247653a7c52feb4c48437e1c1837f75'
-            '/raw/a68333b876edaf62df2efa7bac0e9b3613258851/dash.css'
-        )
-    }
-)
+app.css.append_css({'external_url': 'http://tiny.cc/dashcss'})
 
+# Create controls
 county_options = [{'label': str(COUNTIES[county]), 'value': str(county)}
                   for county in COUNTIES]
 
@@ -40,6 +30,13 @@ well_status_options = [{'label': str(WELL_STATUSES[well_status]),
 well_type_options = [{'label': str(WELL_TYPES[well_type]),
                       'value': str(well_type)}
                      for well_type in WELL_TYPES]
+
+
+# Load data
+df = pd.read_csv('data/wellspublic.csv', low_memory=False)pl
+df['Date_Well_Completed'] = pd.to_datetime(df['Date_Well_Completed'])
+
+points = cPickle.load(open("data/dataset.pickle", "r"))
 
 
 # In[]:
@@ -95,6 +92,8 @@ app.layout = html.Div(
             ]
         ),
         core.Graph(id='map'),
+        core.Graph(id='production'),
+        # core.Graph(id='graph2'),
         html.Span(
             core.RangeSlider(
                 id='year_slider',
@@ -117,8 +116,6 @@ app.layout = html.Div(
 
 # In[]:
 # Create callbacks
-df = pd.read_csv('data/wellspublic.csv', low_memory=False)
-df['Date_Well_Completed'] = pd.to_datetime(df['Date_Well_Completed'])
 
 
 # Status hider
@@ -145,8 +142,8 @@ def display_control(selector):
 @app.callback(Output('map', 'figure'), [Input('counties', 'value'),
                                         Input('well_statuses', 'value'),
                                         Input('well_types', 'value'),
-                                        Input('year_slider', 'value'),])
-def make_figure(counties, well_statuses, well_types, year_slider):
+                                        Input('year_slider', 'value')])
+def make_main_figure(counties, well_statuses, well_types, year_slider):
 
     dff = df[df['Cnty'].isin(counties)
              & df['Well_Status'].isin(well_statuses)
@@ -161,6 +158,7 @@ def make_figure(counties, well_statuses, well_types, year_slider):
             lon=dfff['Surface_Longitude'],
             lat=dfff['Surface_latitude'],
             text=dfff['Well_Name'],
+            customdata=dfff['API_WellNo'],
             name=WELL_TYPES[well],
             marker=dict(
                 size=4,
@@ -206,13 +204,61 @@ def make_figure(counties, well_statuses, well_types, year_slider):
 
 
 
-@app.callback(
-    Output('well_types', 'value'),
-    [Input('map', 'clickData'),
-     Input('map', 'hoverData')])
-def filterScatterPlot(clickData, hoverData):
-    print(clickData)
-    return WELL_TYPES.keys()
+@app.callback(Output('production', 'figure'), [Input('counties', 'value'),
+                                               Input('well_statuses', 'value'),
+                                               Input('well_types', 'value'),
+                                               Input('year_slider', 'value'),
+                                               Input('map', 'hoverData')])
+def make_main_figure(counties, well_statuses, well_types, year_slider, map):
+    if map is None:
+        map = {'points': []}
+    chosen = [point['customdata'] for point in map['points']]
+    print(chosen)
+
+    try:
+        selected = points[chosen[0]]
+        selected['Production'].sort_index(inplace=True)
+        x = selected['Production'].index
+        y = selected['Production']['Gas Produced, MCF']
+        print(x)
+        print(y)
+    except:
+        x = []
+        y = []
+        print("Not available")
+        pass
+
+    traces2 = []
+    trace1 = dict(
+        type='line',
+        x=x,
+        y=y,
+    )
+    traces2.append(trace1)
+
+    layout2 = dict(
+    autosize=True,
+    font=dict(
+        family="Overpass",
+        size=12,
+        color='#CCCCCC',
+    ),
+    margin=dict(
+        l=20,
+        r=120,
+        b=20,
+        t=20
+    ),
+    hovermode="closest",
+    plot_bgcolor="#191A1A",
+    paper_bgcolor="#020202",
+    legend=dict(
+        font=dict(size=10),
+    ),
+    )
+
+    figure = dict(data=traces2, layout=layout2)
+    return figure
 
 # In[]:
 # Main

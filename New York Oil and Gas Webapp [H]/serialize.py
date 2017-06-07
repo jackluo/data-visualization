@@ -1,7 +1,7 @@
 # In[]:
 # Import required libraries
 import pandas as pd
-import pickle
+import cPickle
 
 
 # In[]:
@@ -41,4 +41,4 @@ for api, df_well in df.groupby('API Well Number'):
 # In[]:
 # Serialise to Pickle
 with open('data/dataset.pickle', 'wb') as f:
-    pickle.dump(dataset, f, protocol=pickle.HIGHEST_PROTOCOL)
+    pickle.dump(dataset, f)
