@@ -1,7 +1,7 @@
 # In[]:
 # Import required libraries
 import pandas as pd
-import cPickle
+import pickle
 
 
 # In[]:
@@ -40,5 +40,5 @@ for api, df_well in df.groupby('API Well Number'):
 
 # In[]:
 # Serialise to Pickle
-with open('data/dataset.pickle', 'wb') as f:
+with open('data/dataset.pkl', 'wb') as f:
     pickle.dump(dataset, f)
