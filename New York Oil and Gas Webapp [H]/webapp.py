@@ -7,7 +7,7 @@ import datetime as dt
 
 import pandas as pd
 import dash
-from dash.dependencies import Input, Output, State, Event
+from dash.dependencies import Input, Output, State
 import dash_core_components as dcc
 import dash_html_components as html
 
@@ -44,7 +44,7 @@ mapbox_access_token = 'pk.eyJ1IjoiamFja2x1byIsImEiOiJjajNlcnh3MzEwMHZtMzNueGw3NW
 
 layout = dict(
     autosize=True,
-    height=750,
+    height=500,
     font=dict(
         family="Overpass",
         size=11,
@@ -67,7 +67,7 @@ layout = dict(
         accesstoken=mapbox_access_token,
         style="dark",
         center=dict(
-            lon=-77.16,
+            lon=-78.05,
             lat=42.54,
         ),
         zoom=7,
@@ -85,9 +85,9 @@ app.layout = html.Div(
                 html.P('Filter by construction date:'),
                 dcc.RangeSlider(
                     id='year_slider',
-                    min=1900,
+                    min=1960,
                     max=2017,
-                    value=[1900, 2017],
+                    value=[1960, 2017],
                 ),
             ],
             style={'margin-top': '20'}
@@ -143,15 +143,16 @@ app.layout = html.Div(
                 [
                     dcc.Graph(id='main_graph'),
                 ],
-                #className='six columns',
+                # className='six columns',
                 style={'width': '67%', 'display': 'inline-block'}
             ),
             html.Div(
                 [
                     dcc.Graph(id='individual_graph'),
                 ],
-                #className='six columns offset-by-one-half',
-                style={'width': '33%', 'float': 'right', 'display': 'inline-block'}
+                # className='six columns offset-by-one-half',
+                style={'width': '33%', 'float': 'right',
+                       'display': 'inline-block'}
             ),
         ]),
         html.Div([
@@ -159,7 +160,7 @@ app.layout = html.Div(
                 [
                     dcc.Graph(id='count_graph'),
                 ],
-                #className='six columns',
+                # className='six columns',
                 style={'width': '67%', 'display': 'inline-block'}
             ),
             html.Div(
@@ -174,8 +175,9 @@ app.layout = html.Div(
                         labelStyle={'margin-bottom': '-10'}
                     ),
                 ],
-                #className='six columns offset-by-one-half',
-                style={'width': '33%', 'float': 'right', 'display': 'inline-block'}
+                # className='six columns offset-by-one-half',
+                style={'width': '33%', 'float': 'right',
+                       'display': 'inline-block'}
             ),
         ]),
     ],
@@ -280,10 +282,9 @@ def make_main_figure(well_statuses, well_types, year_slider,
         layout['mapbox']['center']['lat'] = lat
         layout['mapbox']['zoom'] = zoom
     else:
-        lon = -77.16
+        lon = -78.05
         lat = 42.54
         zoom = 7
-
 
     figure = dict(data=traces, layout=layout)
     return figure
@@ -293,12 +294,13 @@ def make_main_figure(well_statuses, well_types, year_slider,
 @app.callback(Output('individual_graph', 'figure'),
               [Input('main_graph', 'hoverData'),
                Input('main_graph', 'clickData')])
-def make_side_figure(main_graph_hover, main_graph_click):
+def make_individual_figure(main_graph_hover, main_graph_click):
 
-    layout_secondary = copy.deepcopy(layout)
+    layout_individual = copy.deepcopy(layout)
 
     if main_graph_hover is None:
-        main_graph_hover = {'points': [{'curveNumber': 4, 'pointNumber': 3244, 'customdata': 31101228740000}]}
+        main_graph_hover = {'points': [{'curveNumber': 4, 'pointNumber': 3244,
+                                        'customdata': 31101228740000}]}
 
     try:
         raise Exception()
@@ -356,7 +358,7 @@ def make_side_figure(main_graph_hover, main_graph_click):
             xref="paper",
             yref="paper",
         )
-        layout_secondary['annotations'] = [annotation]
+        layout_individual['annotations'] = [annotation]
         data = []
     else:
         data = [
@@ -394,9 +396,44 @@ def make_side_figure(main_graph_hover, main_graph_click):
                 ),
             )
         ]
-        layout_secondary['title'] = 'Individual Production: ' + selected['Well_Name']
+        layout_individual['title'] = 'Individual Production: ' + selected['Well_Name']  # noqa: E501
 
-    figure = dict(data=data, layout=layout_secondary)
+    figure = dict(data=data, layout=layout_individual)
+    return figure
+
+
+# Selectors -> count graph
+@app.callback(Output('count_graph', 'figure'),
+              [Input('well_statuses', 'value'),
+               Input('well_types', 'value'),
+               Input('year_slider', 'value')])
+def make_count_figure(well_statuses, well_types, year_slider):
+
+    layout_count = copy.deepcopy(layout)
+
+    dff = df[df['Well_Status'].isin(well_statuses)
+             & df['Well_Type'].isin(well_types)
+             & (df['Date_Well_Completed'] > dt.datetime(year_slider[0], 1, 1))
+             & (df['Date_Well_Completed'] < dt.datetime(year_slider[1], 1, 1))]
+
+    g = dff[['API_WellNo', 'Date_Well_Completed']]
+    g.index = g['Date_Well_Completed']
+    g = g.resample('A').count()
+    print(g.index)
+    print(g)
+
+    data = [
+        dict(
+            type='bar',
+            x=g.index,
+            y=g['API_WellNo'],
+            name='All Wells',
+        ),
+    ]
+
+    layout_count['title'] = 'Completed Wells/Year'
+
+    figure = dict(data=data, layout=layout_count)
     return figure
 
 
