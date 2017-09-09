@@ -36,7 +36,6 @@ for f in files:
     df.index = df.index.map(dt.datetime.fromordinal)
     db[f.replace('.csv', '')] = df
 
-
 data_selector_options = [{'label': source.title(), 'value': source} for source in db]
 data_selector_keys = list(db.keys())
 
@@ -329,7 +328,7 @@ app.layout =  html.Div([
     ],
         style={
             'width': '85%',
-            'max-width': '1200',
+            'max-width': '1440',
             'margin-left': 'auto',
             'margin-right': 'auto',
             'font-family': 'overpass',
@@ -338,6 +337,7 @@ app.layout =  html.Div([
 ],
     style={'font-family': 'Roboto'}
 )
+
 
 # In[]:
 # Other layouts
@@ -385,6 +385,15 @@ resampler = {
     'Views': 'sum',
     'Visits': 'sum'}
 
+colors = {
+    'Facebook': '#4267B2',
+    'Gdn': '#33A929',
+    'Mailchimp': '#FFC413',
+    'Search': '#20A474',
+    'Traffic': '#FF3730',
+    'Twitter': '#4AB3F4'
+}
+
 
 def filter_resample(df, start_date, end_date, resolution):
     columns = df.columns
@@ -395,56 +404,52 @@ def filter_resample(df, start_date, end_date, resolution):
     return df
 
 
-def plot(dfs, selected, variable, kind='area', smoothing='0'):
+def plot(dfs, selected, variables, kind='area', smoothing='1'):
 
-    # kind = 'area'
-    # dfs = []
-    # for data_source in data_selector_keys:
-    #     df = db[data_source]
-    #     dfs.append(df)
-
-    plot_df_list = []
-    name_list = []
-    for i, df in enumerate(dfs):
-        try:
-            plot_df_list.append(df[variable])
-            name_list.append(selected[i].title())
-        except:
-            print('Variable not found in dataset')
-
-    plot_df = pd.concat(plot_df_list, axis=1)
-
-    # Stacked area for non-ratio variables
-    fill = False
-    if resampler[variable] == 'sum':
-        plot_df = plot_df.T.fillna(0).cumsum().T
-        if kind == 'area':
-            fill = True
-
-    # Plotting
-    name_list = iter(name_list)
     data = []
-    for col in plot_df:
+    for variable in variables:
 
-        trace = dict(
-            type='scatter',
-            mode='lines',
-            x=plot_df.index,
-            y=plot_df[col],
-            name = next(name_list),
-            hoverinfo = "x+y++name",
-            line = dict(
-                width = '1',
-                # color='blue',
-                shape = "spline",
-                smoothing = smoothing,
-            ),
-        )
+        plot_df_list = []
+        name_list = []
+        for i, df in enumerate(dfs):
+            try:
+                plot_df_list.append(df[variable])
+                name_list.append(selected[i].title())
+            except:
+                print('Variable not found in dataset')
 
-        if fill:
-            trace['fill'] = 'tonexty'
+        plot_df = pd.concat(plot_df_list, axis=1)
 
-        data.append(trace)
+        # Stacked area for non-ratio variables
+        fill = False
+        if resampler[variable] == 'sum':
+            plot_df = plot_df.T.fillna(0).cumsum().T
+            if kind == 'area':
+                fill = True
+
+        # Plotting
+        color_list = [colors[name] for name in name_list]
+        color_list = iter(color_list)
+        name_list = iter(name_list)
+
+        for index, row in plot_df.T.iterrows():
+            trace = dict(
+                type='scatter',
+                mode='lines',
+                x=row.index,
+                y=row,
+                name=next(name_list),
+                hoverinfo="x+y++name",
+                line=dict(
+                    width='1',
+                    color=next(color_list),
+                    shape="spline",
+                    smoothing=smoothing,
+                ),
+            )
+            if fill:
+                trace['fill'] = 'tonexty'
+            data.append(trace)
 
     # Global layout
     layout = dict(
@@ -452,6 +457,7 @@ def plot(dfs, selected, variable, kind='area', smoothing='0'):
         height=500,
         font=dict(family='Overpass'),
         titlefont=dict(color='#CCCCCC', size='14'),
+        plot_bgcolor='#FAFAFA',
         margin=dict(
             l=40,
             r=40,
@@ -459,6 +465,7 @@ def plot(dfs, selected, variable, kind='area', smoothing='0'):
             t=40
         ),
         hovermode="closest",
+        showlegend=True,
         legend=dict(font=dict(size=10), orientation='h'),
     )
 
@@ -541,14 +548,32 @@ def update_options_{}(selected, start_date, end_date, resolution, variable):
         df = filter_resample(df, start_date, end_date, resolution)
         dfs.append(df)
 
-    figure = plot(dfs, selected, variable)
+    figure = plot(dfs, selected, [variable])
     return figure
 
     """.format(graph_variables[i], selector_variable, i)
 
     exec(string)
 
+# Main 2 variable chart
+@app.callback(Output('top-left-graph', 'figure'),
+              [Input('data_selector', 'value'),
+               Input('period_selector', 'start_date'),
+               Input('period_selector', 'end_date'),
+               Input('resolution_selector', 'value'),
+               Input('top-left-graph-selector-1', 'value'),
+               Input('top-left-graph-selector-2', 'value')])
+def update_options_main(selected, start_date, end_date, resolution,
+                        variable1, variable2):
 
+    dfs = []
+    for data_source in selected:
+        df = db[data_source]
+        df = filter_resample(df, start_date, end_date, resolution)
+        dfs.append(df)
+
+    figure = plot(dfs, selected, [variable1, variable2])
+    return figure
 
 
 # In[]:
