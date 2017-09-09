@@ -395,33 +395,55 @@ def filter_resample(df, start_date, end_date, resolution):
     return df
 
 
+def plot(dfs, selected, variable, kind='area', smoothing='0'):
 
-def plot(dfs, variable, kind='area', smoothing='0'):
-
-    variable = 'Conversions'
-    dfs = [db['facebook'], db['traffic']]
+    # kind = 'area'
+    # dfs = []
+    # for data_source in data_selector_keys:
+    #     df = db[data_source]
+    #     dfs.append(df)
 
     plot_df_list = []
-    for df in dfs:
+    name_list = []
+    for i, df in enumerate(dfs):
         try:
             plot_df_list.append(df[variable])
+            name_list.append(selected[i].title())
         except:
             print('Variable not found in dataset')
 
     plot_df = pd.concat(plot_df_list, axis=1)
 
     # Stacked area for non-ratio variables
-    if resampler[variable] == 'Sum':
-        df = df.transpose().fillna(0).cumsum().transpose()
+    fill = False
+    if resampler[variable] == 'sum':
+        plot_df = plot_df.T.fillna(0).cumsum().T
+        if kind == 'area':
+            fill = True
 
+    # Plotting
+    name_list = iter(name_list)
     data = []
-    for col in df:
+    for col in plot_df:
+
         trace = dict(
             type='scatter',
             mode='lines',
-            x=col.index,
-            y=col,
+            x=plot_df.index,
+            y=plot_df[col],
+            name = next(name_list),
+            hoverinfo = "x+y++name",
+            line = dict(
+                width = '1',
+                # color='blue',
+                shape = "spline",
+                smoothing = smoothing,
+            ),
         )
+
+        if fill:
+            trace['fill'] = 'tonexty'
+
         data.append(trace)
 
     # Global layout
@@ -519,7 +541,7 @@ def update_options_{}(selected, start_date, end_date, resolution, variable):
         df = filter_resample(df, start_date, end_date, resolution)
         dfs.append(df)
 
-    figure = plot(dfs, variable)
+    figure = plot(dfs, selected, variable)
     return figure
 
     """.format(graph_variables[i], selector_variable, i)
