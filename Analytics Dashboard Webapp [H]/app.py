@@ -364,24 +364,65 @@ for js in external_js:
 # In[]:
 # Helper functions
 
+resampler = {
+    'CPC': 'mean',
+    'CPM': 'mean',
+    'CTR': 'mean',
+    'Conversion Rate': 'mean',
+    'Cost / Conversion': 'mean',
+    'Delivery Rate': 'mean',
+    'Open Rate': 'mean',
+    'Pages / Visit': 'mean',
+    'Send Rate': 'mean',
+    'Clicks': 'sum',
+    'Conversions': 'sum',
+    'Cost': 'sum',
+    'Deliveries': 'sum',
+    'Impressions': 'sum',
+    'Opens': 'sum',
+    'Recipients': 'sum',
+    'Sends': 'sum',
+    'Views': 'sum',
+    'Visits': 'sum'}
+
+
 def filter_resample(df, start_date, end_date, resolution):
+    columns = df.columns
+    sub_resampler = {column: resampler[column] for column in columns}
+
     df = df[start_date:end_date]
-    df.resample(resolution).agg({'open': 'first', 'high': 'max', 'low': 'min', 'close': 'last', 'volume': 'sum', 'quoteVolume': 'sum'})
+    df = df.resample(resolution).agg(sub_resampler)
     return df
+
 
 
 def plot(dfs, variable, kind='area', smoothing='0'):
 
-    data = []
+    variable = 'Conversions'
+    dfs = [db['facebook'], db['traffic']]
+
+    plot_df_list = []
     for df in dfs:
         try:
-            trace = dict(
-                x=df.index,
-                y=df[variable],
-            )
-            data.append(trace)
+            plot_df_list.append(df[variable])
         except:
             print('Variable not found in dataset')
+
+    plot_df = pd.concat(plot_df_list, axis=1)
+
+    # Stacked area for non-ratio variables
+    if resampler[variable] == 'Sum':
+        df = df.transpose().fillna(0).cumsum().transpose()
+
+    data = []
+    for col in df:
+        trace = dict(
+            type='scatter',
+            mode='lines',
+            x=col.index,
+            y=col,
+        )
+        data.append(trace)
 
     # Global layout
     layout = dict(
@@ -484,6 +525,8 @@ def update_options_{}(selected, start_date, end_date, resolution, variable):
     """.format(graph_variables[i], selector_variable, i)
 
     exec(string)
+
+
 
 
 # In[]:
