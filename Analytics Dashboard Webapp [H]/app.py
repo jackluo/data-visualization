@@ -13,6 +13,7 @@ import dash
 from dash.dependencies import Input, Output, State, Event
 import dash_core_components as dcc
 import dash_html_components as html
+import dash_table_experiments as dcce
 
 from dash_parser import *
 
@@ -197,12 +198,12 @@ app.layout =  html.Div([
             # Upper graph selector
             html.Div([
                 html.Div([
-                    dcc.Dropdown(id='top-left-graph-selector-1', value='Visits')
+                    dcc.Dropdown(id='top-left-graph-selector-1', value='Views')
                 ],
                     className='three columns'
                 ),
                 html.Div([
-                    dcc.Dropdown(id='top-left-graph-selector-2', value='Views')
+                    dcc.Dropdown(id='top-left-graph-selector-2', value='Visits')
                 ],
                     className='three columns'
                 ),
@@ -218,7 +219,10 @@ app.layout =  html.Div([
                     className='six columns'
                 ),
                 html.Div([
-                    dcc.Graph(id='top-right-table')
+                    dcce.DataTable(
+                        id='top-right-table',
+                        rows=pd.DataFrame().to_dict('records'),  # Bug, can't be empty for now
+                    )
                 ],
                     className='six columns'
                 ),
@@ -383,7 +387,8 @@ resampler = {
     'Recipients': 'sum',
     'Sends': 'sum',
     'Views': 'sum',
-    'Visits': 'sum'}
+    'Visits': 'sum'
+}
 
 colors = {
     'Facebook': '#4267B2',
@@ -404,9 +409,10 @@ def filter_resample(df, start_date, end_date, resolution):
     return df
 
 
-def plot(dfs, selected, variables, kind='area', smoothing='1'):
+def plot(dfs, selected, variables, kind='area'):
 
     data = []
+
     for variable in variables:
 
         plot_df_list = []
@@ -441,10 +447,8 @@ def plot(dfs, selected, variables, kind='area', smoothing='1'):
                 name=next(name_list),
                 hoverinfo="x+y++name",
                 line=dict(
-                    width='1',
+                    width='2',
                     color=next(color_list),
-                    shape="spline",
-                    smoothing=smoothing,
                 ),
             )
             if fill:
@@ -472,14 +476,21 @@ def plot(dfs, selected, variables, kind='area', smoothing='1'):
     return dict(data=data, layout=layout)
 
 
-def make_table(df):
-    table = []
-    for index, row in df.iterrows():
-        html_row = []
-        for i in range(len(row)):
-            html_row.append(html.Td([row[i]]))
-        table.append(html.Tr(html_row))
-    return table
+def make_table(dfs, selected, variables):
+
+    plot_df_list = []
+    for variable in variables:
+
+        name_list = []
+        for i, df in enumerate(dfs):
+            try:
+                plot_df_list.append(df[variable])
+                name_list.append(selected[i].title())
+            except:
+                print('Variable not found in dataset')
+
+    plot_df = pd.concat(plot_df_list, axis=1)
+    return plot_df.to_dict('records')
 
 
 # In[]:
@@ -574,6 +585,27 @@ def update_options_main(selected, start_date, end_date, resolution,
 
     figure = plot(dfs, selected, [variable1, variable2])
     return figure
+
+
+# Main 2 variable chart
+@app.callback(Output('top-right-table', 'rows'),
+              [Input('data_selector', 'value'),
+               Input('period_selector', 'start_date'),
+               Input('period_selector', 'end_date'),
+               Input('resolution_selector', 'value'),
+               Input('top-left-graph-selector-1', 'value'),
+               Input('top-left-graph-selector-2', 'value')])
+def update_options_main(selected, start_date, end_date, resolution,
+                        variable1, variable2):
+
+    dfs = []
+    for data_source in selected:
+        df = db[data_source]
+        df = filter_resample(df, start_date, end_date, resolution)
+        dfs.append(df)
+
+    rows = make_table(dfs, selected, [variable1, variable2])
+    return rows
 
 
 # In[]:
